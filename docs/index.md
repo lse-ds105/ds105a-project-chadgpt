@@ -1,6 +1,6 @@
 # Hello World
 
-This is my first website! It is very simple, but I'm proud of it.
+This is our first website! It is very simple, but we're proud of it.
 
 ## Team Members 
 - Zicheng Liu (zcliu35) | BSc in Economics
