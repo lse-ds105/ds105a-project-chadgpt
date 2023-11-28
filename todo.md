@@ -1,4 +1,4 @@
 # To do
 
-## - [ ] Data Scraping
-### - [] Figure out Reddit API
+## Data Scraping
+- [ ] Figure out Reddit API
