@@ -1,0 +1,6 @@
+tqdm==4.65.0
+pandas>=2.1
+plotnine>0.12
+altair>=5
+pyaml>=6.0.1
+matplotlib>=3.7
