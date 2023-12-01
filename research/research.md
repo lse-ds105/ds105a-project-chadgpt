@@ -8,3 +8,6 @@ https://github.com/Adesoji1/Food-Image-Classification/tree/main
 
 ### Info on NLTK
 https://realpython.com/nltk-nlp-python/#:~:text=NLTK%2C%20or%20Natural%20Language%20Toolkit,first%20need%20to%20preprocess%20it.
+
+### Possible Nutrition API 
+https://api-ninjas.com/api/nutrition 
