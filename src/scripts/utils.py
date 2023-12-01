@@ -1,5 +1,8 @@
 import json
 import requests as r
+import sys
+
+sys.path.append("../")
 
 # AUTHENTICATE WITH CREDENTIALS TO GET ACCESS TOKEN AND HEADERS
 def authenticate_and_get_headers(filepath="../credentials.json"):
