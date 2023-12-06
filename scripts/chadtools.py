@@ -1,6 +1,5 @@
 import json
 import requests as r
-import sys
 import spacy
 
 # AUTHENTICATE WITH CREDENTIALS TO GET ACCESS TOKEN AND HEADERS
