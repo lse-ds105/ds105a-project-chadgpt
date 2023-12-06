@@ -1,8 +1,7 @@
 import json
 import requests as r
 import sys
-
-sys.path.append("../")
+import spacy
 
 # AUTHENTICATE WITH CREDENTIALS TO GET ACCESS TOKEN AND HEADERS
 def authenticate_and_get_headers(filepath="../credentials.json"):
@@ -44,3 +43,19 @@ def authenticate_and_get_headers(filepath="../credentials.json"):
     
     return headers
 
+def is_english(text, model):
+    '''
+    Checks if text is in English
+
+    Args:
+        text (str): the text to be parsed.
+        model (Language): the NLP model to be loaded. Note that the model must be downloaded using pip and loaded to be used.
+    
+    Returns:
+        (bool): True if the text is in English; False otherwise.    
+    '''
+    # Process the text using spaCy
+    doc = model(text)
+    
+    # return True if the text is in English, False otherwise
+    return doc.lang_ == 'en'
