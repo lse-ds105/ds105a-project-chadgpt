@@ -17,3 +17,6 @@ https://spotintelligence.com/2022/12/19/text-similarity-python/#1_Text_similarit
 
 ### Possible Nutrition API
 https://api-ninjas.com/api/nutrition
+
+### Possible Colour Analysis using OpenCV
+https://www.tutorialspoint.com/color-identification-in-images-using-python-and-opencv
