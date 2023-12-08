@@ -133,3 +133,4 @@ cython_debug/
 credentials.json
 sandbox.ipynb
 data/posts.json
+imgs/
