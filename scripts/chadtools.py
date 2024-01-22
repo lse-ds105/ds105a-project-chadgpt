@@ -1,6 +1,5 @@
 import json
 import requests as r
-import sys
 import spacy
 
 # AUTHENTICATE WITH CREDENTIALS TO GET ACCESS TOKEN AND HEADERS
@@ -49,7 +48,7 @@ def is_english(text, model):
 
     Args:
         text (str): the text to be parsed.
-        model (Language): the NLP model to be loaded. Note that the model must be downloaded using pip and loaded to be used.
+        model (Language): the NLP model to be loaded. The model must be downloaded using pip first.
     
     Returns:
         (bool): True if the text is in English; False otherwise.    
