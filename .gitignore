@@ -132,4 +132,5 @@ cython_debug/
 .DS_Store
 credentials.json
 sandbox.ipynb
-sandbox.py
+data/posts.json
+imgs/
