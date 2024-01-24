@@ -26,7 +26,7 @@ to insert roadmap here
 (can start elaborating on this once cfm this is the structure we want)
 ### 📖Part 1 
 <span style="color:black;">[</span>
-- We started off with r/recipe, where we used reddit api to get the data that we wantr
+- We started off with r/recipe, where we used reddit api to get the data that we wanted
 - Cleaned the data (such as filtering out non english...changing data type...)
 <span style="color:black;">]</span>
 
@@ -39,7 +39,7 @@ to insert roadmap here
 (to describe technical steps without too many details)
 <span style="color:black;">[</span>
 - We then got the information from BBC good food
-- Ran a Cosine similarity test
+- Ran a Cosine similarity test to match recipes
 <span style="color:black;">]</span>
 
 ### Part 2 📊Analysis
