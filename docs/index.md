@@ -21,9 +21,9 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 
 ## 📋PROJECT Roadmap
 to insert roadmap here
+(Also, insert explanation of Roadmap)
 
 ## 📋General Outline
-(can start elaborating on this once cfm this is the structure we want)
 ### 📖Part 1 
 <span style="color:black;">[</span>
 - We started off with r/recipe, where we used reddit api to get the data that we wanted
