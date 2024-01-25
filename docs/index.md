@@ -1,6 +1,8 @@
 # DS105A-project-chadgpt
 
-<span style="color:rgb(255,0,0)">[</span>Project Chadgpt<span style="color:rgb(255,0,0)">]</span>
+<div style="width: 70%; border: 1px solid; border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); border-image-slice: 1; border-radius: 1em; padding: 1em; margin: 1em 0;">
+Project Chadgpt
+</div>
 
 ## 📋Team Members 
 <span style="color:rgb(255,0,0)">[</span>
