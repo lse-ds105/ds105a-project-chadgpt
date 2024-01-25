@@ -28,7 +28,7 @@ to insert roadmap here
 ## 📋General Outline
 ### 📖Part 1 
 <span style="color:black;">[</span>
-- We started off with r/recipe, where we used reddit api to get the data that we wanted
+- We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 - Cleaned the data (such as filtering out non english...changing data type...)
 <span style="color:black;">]</span>
 
