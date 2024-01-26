@@ -56,7 +56,7 @@ def is_english(text, threshold_rank=5):
     '''
     ranklist = langid.rank(text)
     langlist = [ranklist[x][0] for x in range(len(ranklist))]
-    if 'en' not in langlist[:threshold_rank]:
+    if 'en' not in langlist[:threshold_rank]: # if English is not in the top 5 languages
         return False
     else:
         return True
