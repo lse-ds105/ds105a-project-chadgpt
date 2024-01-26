@@ -49,7 +49,7 @@ def is_english(text, threshold_rank=5):
 
     Args:
         text (str): the text to be parsed.
-        model (Language): the NLP model to be loaded. The model must be downloaded using pip first.
+        threshold_rank (int): the threshold rank to be specified. A higher threshold means a looser requirement for English.
     
     Returns:
         (bool): True if the text is in English; False otherwise.    
