@@ -53,7 +53,7 @@ We analysed data from reddit and observed some trend on posts with different fla
     - To overcome this challenge, we iterated over a list of flair names for a specific subreddit and combining post data from each flair by extending a list!
 
 #### ❎Challenge 2
-- Extracting the OP's comment containing the actual recipe was challenging because while we can use one of the Reddit API Keys to target all OP's comments, we faced problems isolating the commet with recipe which we wanted.
+- Extracting the OP's comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
     - To overcome this challenge, we made an assumption: The OP's comment we want will be LONGER 
     all other comments by the OP. Through this, we are able to target the OP's original comment with ingredients and instructions.
 
@@ -62,7 +62,7 @@ We analysed data from reddit and observed some trend on posts with different fla
     - We created a custom function (chadtools_is_english) to get just english posts. We used .apply() to apply our function to each element in the 'title' column. 
     - (Insert screenshot)
     - This function checks if the text is in English using the spaCy language model (nlp)
-    
+
 ## 📋Appendix
 ### Contributions
 - Zicheng Liu (zcliu35) 
