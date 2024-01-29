@@ -20,3 +20,9 @@ https://api-ninjas.com/api/nutrition
 
 ### Possible Colour Analysis using OpenCV
 https://www.tutorialspoint.com/color-identification-in-images-using-python-and-opencv
+
+### fat, sugar, salt content in healthy recipes: 
+https://www.bbcgoodfood.com/howto/guide/good-food-guide-healthy-eating 
+- Low fat: 12g or less per serving
+- Low sugar: 15g or less per serving
+- Low salt: 1.5g or less per serving
