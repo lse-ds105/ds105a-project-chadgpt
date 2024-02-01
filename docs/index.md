@@ -1,14 +1,13 @@
 # DS105A-project-chadgpt
+Project Chadgpt
 
-<span style="color:rgb(255,0,0)">[</span>Project Chadgpt<span style="color:rgb(255,0,0)">]</span>
 
 ## 📋Team Members 
-<span style="color:rgb(255,0,0)">[</span>
 - Zicheng Liu (zcliu35) | BSc in Economics
 - Yuyao Bai (yuyaobai) | BSc in Economics
 - Clarence Quek (kurarensu77) | BSc in Economics
 - Yi Song (songgyi) | BSc in Economics
-<span style="color:rgb(255,0,0)">]</span>
+
 
 ## 🍗 Spicing Up Data: An Analytical Feast on r/recipe
 As a student facing the challenges of independent living at LSE, have you experimented with any recipes shared on r/recipe? Better yet, have you actively added your own culinary creations to this subreddit? If you're navigating through the multitude of recipes available and seeking your ultimate go-to meal for tight budgets and busy schedules, look no further!
@@ -21,35 +20,48 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 
 ## 📋PROJECT Roadmap
 to insert roadmap here
+(Also, insert explanation of Roadmap)
 
 ## 📋General Outline
-(can start elaborating on this once cfm this is the structure we want)
 ### 📖Part 1 
-<span style="color:black;">[</span>
-- We started off with r/recipe, where we used reddit api to get the data that we wanted
+- We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 - Cleaned the data (such as filtering out non english...changing data type...)
-<span style="color:black;">]</span>
+
 
 ### Part 1 📊Analysis
-<span style="color:rgb(255,0,0)">[</span>
-- Insert analysis (basically all the graphs we presented previously)
-<span style="color:rgb(255,0,0)">]</span>
+We analysed data from reddit and observed some trend on posts with different flairs!
+- insert pic (plot_top_10_percent.jpg)
+    - Remarkably, within the top 10% of posts ranked by upvote ratio, those labeled with the "dessert" flair exhibit the highest frequency. Notably, this occurrence surpasses the second-highest, "poultry," by more than half. It suggests a strong inclination among Reddit users towards favoring dessert-related posts.
+- insert pic (plot_all.jpg)
+    - Additionally, across all posts, there is a notable rightward skew in the distribution of upvote ratios, indicating that a majority of posts have ratios approaching 1. This pattern suggests a community of users on this subreddit who are notably supportive and benevolent.
 
 ### 📖Part 2 
 (to describe technical steps without too many details)
-<span style="color:black;">[</span>
 - We then got the information from BBC good food
 - Ran a Cosine similarity test to match recipes
-<span style="color:black;">]</span>
+
 
 ### Part 2 📊Analysis
-<span style="color:rgb(255,0,0)">[</span>
 - Present findings
-<span style="color:rgb(255,0,0)">]</span>
 
 ### 📖Overall Conclusion
 
 ### 📖Challenges
+
+#### ❎Challenge 1
+- Reddit's API limits a search query to 250 results only
+    - To overcome this challenge, we iterated over a list of flair names for a specific subreddit and combining post data from each flair by extending a list!
+
+#### ❎Challenge 2
+- Extracting the OP's comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
+    - To overcome this challenge, we made an assumption: The OP's comment we want will be LONGER 
+    all other comments by the OP. Through this, we are able to target the OP's original comment with ingredients and instructions.
+
+#### ❎Challenge 3
+- Excluding posts in languages other than English posed challenges, as the utilization of Langid to identify non-English titles, even with a low confidence level (indicating a less stringent removal of titles), resulted in a narrowed dataframe to only 28 posts. This occurred despite the presence of a few non-English posts in the dataset.
+    - We created a custom function (chadtools_is_english) to get just english posts. We used .apply() to apply our function to each element in the 'title' column. 
+    - (Insert screenshot)
+    - This function checks if the text is in English using the spaCy language model (nlp)
 
 ## 📋Appendix
 ### Contributions
