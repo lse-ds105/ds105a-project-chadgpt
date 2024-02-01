@@ -1,6 +1,7 @@
 import json
 import requests as r
 import spacy
+import langid
 
 # AUTHENTICATE WITH CREDENTIALS TO GET ACCESS TOKEN AND HEADERS
 def authenticate_and_get_headers(filepath="../credentials.json"):
@@ -42,19 +43,20 @@ def authenticate_and_get_headers(filepath="../credentials.json"):
     
     return headers
 
-def is_english(text, model):
+def is_english(text, threshold_rank=5):
     '''
     Checks if text is in English
 
     Args:
         text (str): the text to be parsed.
-        model (Language): the NLP model to be loaded. The model must be downloaded using pip first.
+        threshold_rank (int): the threshold rank to be specified. A higher threshold means a looser requirement for English.
     
     Returns:
         (bool): True if the text is in English; False otherwise.    
     '''
-    # Process the text using spaCy
-    doc = model(text)
-    
-    # return True if the text is in English, False otherwise
-    return doc.lang_ == 'en'
+    ranklist = langid.rank(text)
+    langlist = [ranklist[x][0] for x in range(len(ranklist))]
+    if 'en' not in langlist[:threshold_rank]: # if English is not in the top 5 languages
+        return False
+    else:
+        return True
