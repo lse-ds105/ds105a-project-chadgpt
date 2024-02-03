@@ -2,6 +2,8 @@ import json
 import requests as r
 import spacy
 import langid
+from openai import OpenAI
+import re
 
 # AUTHENTICATE WITH CREDENTIALS TO GET ACCESS TOKEN AND HEADERS
 def authenticate_and_get_headers(filepath="../credentials.json"):
@@ -60,3 +62,52 @@ def is_english(text, threshold_rank=5):
         return False
     else:
         return True
+    
+def extract_ingredients_text(comment):
+    match = re.search(r'INSTRUCTIONS|DIRECTIONS|STEPS', comment, re.IGNORECASE)
+    if match:
+        ingredients_text = comment[:match.start()].strip()
+        return ingredients_text
+    else:
+        return comment
+    
+def setup_gpt_client(credentials_path="../credentials.json"):
+    '''
+    Set up the OpenAI client using the credentials.json file. REQUIRES OPENAI API KEY. \n
+    To include the OpenAI API key, the credentials.json file should have the following structure:
+    {"openai_api_key: <your_api_key_here>"}
+    '''
+    # Open the file and load the data into a variable
+    with open(credentials_path, "r") as f:
+        credentials = json.load(f)
+
+    client = OpenAI(api_key=credentials["openai_api_key"])
+    return client
+
+def get_ingredient_list(comment:str, client:OpenAI):
+    '''
+    Extracts the ingredients from a recipe using GPT-3.5-turbo
+    
+    Args: 
+        comment (str): the comment containing the recipe
+        client (OpenAI): the OpenAI client
+        
+    Returns:
+        ingredient_list (list): a list of ingredients
+    '''
+    response = client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    temperature=0.5,
+    seed=69,
+    messages=[
+        {
+            "role": "system", "content": "You are a professional chef and food scientist.",
+            "role": "user", "content": "In the following recipe, disregard the cooking instructions, identify the food items without the quantities and list them in a string with semicolon as the delimiter:\n" + comment
+        },
+    ],
+    )
+    ingredient_list = response.choices[0].message.content.split(";")
+
+    # normalise all text to lower case
+    ingredient_list = [ingredient.lower().strip() for ingredient in ingredient_list if ingredient != '']
+    return ingredient_list
