@@ -35,7 +35,8 @@ We suggest a hypothesis that implies foods enjoying broad popularity, as evidenc
 - Cleaned the data (such as filtering out non english...changing data type...)
 #### Filtered data set Example
 
-<iframe src="df_filtered.html" style="width:100%; height:400px;"></iframe>
+<iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+
 
 
 ### Part 1 📊Analysis
