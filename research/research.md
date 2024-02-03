@@ -12,7 +12,7 @@ https://github.com/Adesoji1/Food-Image-Classification/tree/main
 ### Info on NLTK
 https://realpython.com/nltk-nlp-python/#:~:text=NLTK%2C%20or%20Natural%20Language%20Toolkit,first%20need%20to%20preprocess%20it.
 
-### Consine Similarity and other NLP techniques:
+### Cosine Similarity and other NLP techniques:
 https://spotintelligence.com/2022/12/19/text-similarity-python/#1_Text_similarity_with_NLTK
 
 ### Possible Nutrition API
@@ -21,7 +21,7 @@ https://api-ninjas.com/api/nutrition
 ### Possible Colour Analysis using OpenCV
 https://www.tutorialspoint.com/color-identification-in-images-using-python-and-opencv
 
-### fat, sugar, salt content in healthy recipes: 
+### Fat, sugar, salt content in healthy recipes: 
 https://www.bbcgoodfood.com/howto/guide/good-food-guide-healthy-eating 
 - Low fat: 12g or less per serving
 - Low sugar: 15g or less per serving
