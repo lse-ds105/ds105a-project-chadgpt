@@ -44,7 +44,13 @@ Approach:
 - Webscraping using a mixture of CSS and XPath selectors 
 
 2. Calculating cosine similarity score and merging columns based on the maximum simlarity  
-We employ a NLP model- Sentence Transformers- to convert each recipe title into an embedding. Then, we calculated the cosine similarity score between each pair of embeddings of Reddit and BBC Good Food recipe titles. The closer the cosine similarity score is to 1, the more similar the recipes. We only retain the pairs where the cosine similarity score is above the threshold that we set (0.75), and these are considered matches. If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score. Lastly, upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset. This includes nutritional information like calories, salt, fat, and even user ratings.
+- Employed a NLP model- Sentence Transformers- to convert each recipe title into an embedding
+- Calculated the cosine similarity score between each pair of embeddings of Reddit and BBC Good Food recipe titles
+    - The closer the cosine similarity score is to 1, the more similar the recipes titles
+- Only retain the pairs where the cosine similarity score is above the threshold that we set (0.75), and these are considered matches
+    - If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
+- Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
+    - Includes nutritional information and user ratings scraped in Step 1
 
 
 ### Part 2 📊Analysis
