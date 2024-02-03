@@ -33,6 +33,10 @@ We suggest a hypothesis that implies foods enjoying broad popularity, as evidenc
 ### 📖Part 1 (Basic Scraping and Cleaning)
 - We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 - Cleaned the data (such as filtering out non english...changing data type...)
+#### Filtered data set Example
+
+<iframe src="df_filtered.html" style="width:100%; height:400px;"></iframe>
+
 
 ### Part 1 📊Analysis
 We analysed data from reddit and observed some trend on posts with different flairs!
@@ -41,7 +45,7 @@ We analysed data from reddit and observed some trend on posts with different fla
 - insert pic (plot_all.jpg)
     Furthermore, an overarching observation across all posts reveals a conspicuous rightward skew in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to approach a ratio of 1. Such a pattern implies the existence of a community within this subreddit that is notably supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
-### 📖Part 2 (Comparison Scraping and Advanced Cleaning)
+### 📖Part 2 (Further Scraping and Cleaning)
 (to describe technical steps without too many details)
 ## Linking r/recipes and BBC Good Food 
 Approach:
