@@ -1,5 +1,5 @@
 # DS105A-project-chadgpt 😎😎😎😎
-Project Chadgpt
+Project **Chadgpt**
 
 
 ## 📋Team Members 
@@ -22,7 +22,7 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 to insert roadmap here
 
 ### ⚙️Project Hypothesis
-We suggest a hypothesis that implies foods enjoying broad popularity, as evidenced by a high upvote ratio, may demonstrate reduced nutritional content. We aim to investigate and substantiate or refute this assertion through further exploration and analysis.
+We suggest a hypothesis that implies **popular food**, as evidenced by a **high upvote ratio**, may demonstrate **reduced nutritional content**. We aim to investigate and substantiate or refute this assertion through further exploration and analysis.
 
 ### ⚙️Roadmap Explation
 
@@ -33,23 +33,23 @@ We suggest a hypothesis that implies foods enjoying broad popularity, as evidenc
 - We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 - Example of data frame received from reddit:
     - <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
-    - We received around 2065 recipes from the Reddit API, containing basic details like links, upvote ratios, post flairs, and upvote counts. The dataframe is raw and needs cleaning, with redundant columns to be removed
+    - We received around **2065** recipes from the Reddit API, containing basic details like links, upvote ratios, post flairs, and upvote counts. The dataframe is raw and needs cleaning, with redundant columns to be removed
 - Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.  
 - Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.
 Data Cleaning Steps:
-    - Filtering out posts with non-English titles was achieved through a custom function called "Chadtools," leveraging the Langid package.
-    - Conversion of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
-    - Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of stricter regulations from that date onwards, resulting in more consistently formatted posts.
+    - 1️⃣Filtering out posts with **non-English titles** was achieved through a custom function called "Chadtools", leveraging the Langid package.
+    - 2️⃣**Conversion** of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
+    - 3️⃣Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of **stricter regulations from that date onwards**, resulting in more consistently formatted posts.
 
 - Filtered data set Example
     - <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
-    - In this dataset, we have most of the information we require for initial analysis of the posts. We will move on to ingredient and recipe analysis in conjunction with data from BBC in part 2.
+    - In this dataset, we have most of the information we require for initial analysis of the posts.🤩 We will move on to ingredient and recipe analysis in conjunction with data from BBC in part 2.
 
 
 ### Part 1 📊Analysis
 We analysed data from reddit and observed some trend on posts with different flairs!
 - ![Plot: Dessert Flair is the most popular!](../plots/plot_top_10_percent.jpg)
-    - Remarkably, within the top 10% of posts ranked by upvote ratio, those labeled with the "dessert" flair exhibit the highest frequency. Notably, this occurrence surpasses the second-highest, "poultry," by more than half. It suggests a strong inclination among Reddit users towards favoring dessert-related posts.
+    - Remarkably, within the top 10% of posts ranked by upvote ratio, those labeled with the "dessert"🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the second-highest, "poultry,"🍗 by more than half. It suggests a strong inclination among Reddit users towards favoring dessert-related posts.
 - ![Plot: All flairs are skewed to the left!](../plots/plot_all.jpg)
     Furthermore, an overarching observation across all posts reveals a conspicuous left skew in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to approach a ratio of 1. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
