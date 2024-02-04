@@ -64,6 +64,17 @@ def is_english(text, threshold_rank=5):
         return True
     
 def extract_ingredients_text(comment):
+    '''
+    Truncates the recipe post to only include the ingredients, and not the instructions.
+
+    Args:
+        comment (str): the comment containing the recipe
+
+    Returns:
+        ingredients_text (str): the portion of the recipe containing the ingredients.
+
+    Note: This function uses "INSTRUCTIONS", "DIRECTIONS", and "STEPS" as keywords to identify the start of the instructions, which are common delimiter words in the recipe comment. While it is not perfect, it is a good heuristic for most recipes as the main objective is to reduce the number of tokens to be processed by GPT-3.
+    '''
     match = re.search(r'INSTRUCTIONS|DIRECTIONS|STEPS', comment, re.IGNORECASE)
     if match:
         ingredients_text = comment[:match.start()].strip()
