@@ -38,9 +38,9 @@ We suggest a hypothesis that implies foods enjoying broad popularity, as evidenc
 - Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.  
 - Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.
 Data Cleaning Steps:
-- Filtering out posts with non-English titles was achieved through a custom function called "Chadtools," leveraging the Langid package.
-- Conversion of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
-- Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of stricter regulations from that date onwards, resulting in more consistently formatted posts.
+    - Filtering out posts with non-English titles was achieved through a custom function called "Chadtools," leveraging the Langid package.
+    - Conversion of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
+    - Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of stricter regulations from that date onwards, resulting in more consistently formatted posts.
 
 - Filtered data set Example
     - <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
