@@ -30,7 +30,7 @@ We suggest a hypothesis that implies foods enjoying broad popularity, as evidenc
 
 
 ## 📋General Outline
-### 📖Part 1 (Basic Scraping and Cleaning)
+### 📖Part 1 (Initial Scraping and Cleaning)
 - We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 - Example of data frame received from reddit:
     - <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
@@ -38,13 +38,13 @@ We suggest a hypothesis that implies foods enjoying broad popularity, as evidenc
 - Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.  
 - Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.
 Data Cleaning Steps:
-- Filtering out posts with non-English titles was achieved through a custom function called "Chadtools," leveraging the Langid package.
-- Conversion of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
-- Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of stricter regulations from that date onwards, resulting in more consistently formatted posts.
+    - Filtering out posts with non-English titles was achieved through a custom function called "Chadtools," leveraging the Langid package.
+    - Conversion of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
+    - Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of stricter regulations from that date onwards, resulting in more consistently formatted posts.
 
 - Filtered data set Example
     - <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
-    - In this dataset, we have most of the information we require for initial analysis of recipes. We will move on to ingredient and recipe analysis in conjunction with data from BBC in part 2.
+    - In this dataset, we have most of the information we require for initial analysis of the posts. We will move on to ingredient and recipe analysis in conjunction with data from BBC in part 2.
 
 
 ### Part 1 📊Analysis
@@ -70,13 +70,14 @@ Approach:
     - If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
 - This approach yields 555 recipes with matches, a sufficient number for us to conduct further analysis
 - Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
-    - Includes nutritional information and user ratings scraped in Step 1 (insert sample)
+    - Includes nutritional information and user ratings scraped in Step 1 
+    - (insert sample)
 
 3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. 
 
 ### Part 2 📊Analysis
 - Present findings
-<iframe src="interactive_plot.html" style="width: 100%"></iframe>
+<iframe src="../plots/interactive_plot.html" style="width: 100%"></iframe>
 
 ### 📖Overall Conclusion
 
