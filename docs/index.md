@@ -51,8 +51,8 @@ Data Cleaning Steps:
 We analysed data from reddit and observed some trend on posts with different flairs!
 - ![Plot: Dessert Flair is the most popular!](../plots/plot_top_10_percent.jpg)
     - Remarkably, within the top 10% of posts ranked by upvote ratio, those labeled with the "dessert" flair exhibit the highest frequency. Notably, this occurrence surpasses the second-highest, "poultry," by more than half. It suggests a strong inclination among Reddit users towards favoring dessert-related posts.
-- insert pic (plot_all.jpg)
-    Furthermore, an overarching observation across all posts reveals a conspicuous rightward skew in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to approach a ratio of 1. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
+- ![Plot: All flairs are skewed to the left!](../plots/plot_all.jpg)
+    Furthermore, an overarching observation across all posts reveals a conspicuous left skew in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to approach a ratio of 1. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
 ### 📖Part 2 (Further Scraping and Cleaning)
 (to describe technical steps without too many details)
@@ -76,6 +76,7 @@ Approach:
 
 ### Part 2 📊Analysis
 - Present findings
+<iframe src="interactive_plot.html" style="width: 100%"></iframe>
 
 ### 📖Overall Conclusion
 
