@@ -21,11 +21,10 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 ## 📋PROJECT Roadmap
 to insert roadmap here
 
-### Project Hypothesis
+### ⚙️Project Hypothesis
 We suggest a hypothesis that implies foods enjoying broad popularity, as evidenced by a high upvote ratio, may demonstrate reduced nutritional content. We aim to investigate and substantiate or refute this assertion through further exploration and analysis.
 
-### Roadmap Explation
-
+### ⚙️Roadmap Explation
 
 
 
@@ -56,7 +55,7 @@ We analysed data from reddit and observed some trend on posts with different fla
 
 ### 📖Part 2 (Further Scraping and Cleaning)
 (to describe technical steps without too many details)
-## Linking r/recipes and BBC Good Food 
+#### ⚙️Linking r/recipes and BBC Good Food 
 Approach:
 1. Obtain recipe titles and their respective nutritional data (calories, fat, fibre, sugar, protein etc) from BBC Good Food 
 - Sent a GET request to https://www.bbcgoodfood.com/search?q= 
@@ -97,7 +96,7 @@ Approach:
 (insert proof of Struggle using regex?)
 
 ## 📋Appendix
-### Contributions
+### 🔥🔥🔥🔥Contributions
 - Zicheng Liu (zcliu35) 
     - Hard carried
 - Yuyao Bai (yuyaobai)
