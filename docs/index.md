@@ -32,7 +32,12 @@ We suggest a hypothesis that implies foods enjoying broad popularity, as evidenc
 ## 📋General Outline
 ### 📖Part 1 (Basic Scraping and Cleaning)
 - We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
+- Example of data frame received from reddit:
+    - <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+
 - Cleaned the data (such as filtering out non english...changing data type...)
+
+
 #### Filtered data set Example
 
 <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
