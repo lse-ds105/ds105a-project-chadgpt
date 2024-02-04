@@ -77,8 +77,7 @@ Approach:
 
 ### Part 2 📊Analysis
 - Present findings
-<iframe src="../plots/interactive_plot.html" style="width: 100%"></iframe>
-
+<iframe src="../plots/interactive_plot.html" width="800" height="600"></iframe>
 ### 📖Overall Conclusion
 
 ### 📖Challenges
