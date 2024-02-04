@@ -58,7 +58,7 @@ We analysed data from reddit and observed some trend on posts with different fla
 (to describe technical steps without too many details)
 ## Linking r/recipes and BBC Good Food 
 Approach:
-1. Obtain recipe titles and their respective nutritional data from BBC Good Food 
+1. Obtain recipe titles and their respective nutritional data (calories, fat, fibre, sugar, protein etc) from BBC Good Food 
 - Sent a GET request to https://www.bbcgoodfood.com/search?q= 
 - Webscraping using a mixture of CSS and XPath selectors 
 
@@ -68,10 +68,11 @@ Approach:
     - The closer the cosine similarity score is to 1, the more similar the recipes titles
 - Only retain the pairs where the cosine similarity score is above the threshold that we set (0.75), and these are considered matches
     - If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
+- This approach yields 555 recipes with matches, a sufficient number for us to conduct further analysis
 - Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
-    - Includes nutritional information and user ratings scraped in Step 1
-- This approach yields 555 recipes with matches, a sufficient number for us to conduct further analysis.
+    - Includes nutritional information and user ratings scraped in Step 1 (insert sample)
 
+3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. 
 
 ### Part 2 📊Analysis
 - Present findings
@@ -85,11 +86,13 @@ Approach:
     - To overcome this challenge, we iterated over a list of flair names for a specific subreddit and combining post data from each flair by extending a list!
 
 #### ❎Challenge 2
-- Extracting the OP's comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
+- Extracting the OP's (original poster's) comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
     - To overcome this challenge, we made an assumption: The OP's comment we want will be LONGER 
     all other comments by the OP. Through this, we are able to target the OP's original comment with ingredients and instructions.
 
 #### ❎Challenge 3
+- Analysing the ingredient lists provided by OP on Reddit was difficult, as there was a lot of variance and there were no specific subreddit rules regarding the format of ingredient lists. The ingredients were often not well-formatted, making it difficult identify the exact ingredient using NLP. For instance, it was challenging to get Spacy or Regex to identify that the main ingredient in the line "1 clove of garlic, minced"  was "garlic". To overcome this challenge, we decided to use ChatGPT 3.5, as it is a very well-trained model that proved to be much better at identifying the primary ingredients mentioned by the OP.
+(insert proof of Struggle using regex?)
 
 ## 📋Appendix
 ### Contributions
