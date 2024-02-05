@@ -82,16 +82,16 @@ Approach:
 
 ### 📖Challenges
 
-#### ❎Challenge 1
+#### ❎ 1: Reddit API Limits
 - Reddit's API limits a search query to 250 results only
     - To overcome this challenge, we iterated over a list of flair names for a specific subreddit and combining post data from each flair by extending a list!
 
-#### ❎Challenge 2
+#### ❎ 2:Extracting Reddit recipes and ingredients
 - Extracting the OP's (original poster's) comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
     - To overcome this challenge, we made an assumption: The OP's comment we want will be LONGER 
     all other comments by the OP. Through this, we are able to target the OP's original comment with ingredients and instructions.
 
-#### ❎Challenge 3
+#### ❎ 3: Analysing Reddit recipes and ingredients
 - Analysing the ingredient lists provided by OP on Reddit was difficult, as there was a lot of variance and there were no specific subreddit rules regarding the format of ingredient lists. The ingredients were often not well-formatted, making it difficult identify the exact ingredient using NLP. For instance, it was challenging to get Spacy or Regex to identify that the main ingredient in the line "1 clove of garlic, minced"  was "garlic". To overcome this challenge, we decided to use ChatGPT 3.5, as it is a very well-trained model that proved to be much better at identifying the primary ingredients mentioned by the OP.
 (insert proof of Struggle using regex?)
 
