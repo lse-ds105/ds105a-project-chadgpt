@@ -3,12 +3,10 @@ pandas>=2.1
 plotnine>0.12
 altair>=5
 pyaml>=6.0.1
-matplotlib>=3.7
 spacy>=3.7.2
 spacy-transformers
 scrapy
 langid
-sklearn
 sentence-transformers
 openai
 
