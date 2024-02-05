@@ -71,7 +71,7 @@ Approach:
 - This approach yields 467 recipes with matches, a sufficient number for us to conduct further analysis
 - Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
 - Example of merged dataframe between BBC Good Food and r/Recipe
-    - <iframe src="merged_data_for_analysis" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+    - <iframe src="merged_data_for_analysis" style="width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
         - Full data frame shape: 467 x 20
 
 3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. \
