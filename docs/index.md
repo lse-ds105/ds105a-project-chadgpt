@@ -65,8 +65,8 @@ Approach:
     - If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
 - This approach yields 555 recipes with matches, a sufficient number for us to conduct further analysis
 - Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
-    - Includes nutritional information and user ratings scraped in Step 1 
-    - (insert sample)
+    - Example of filtered nutritional information and user ratings scraped in Step 1
+    - <iframe src="bbc_data.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
 
 3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. 
 
