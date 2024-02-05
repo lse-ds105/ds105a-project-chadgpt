@@ -24,7 +24,7 @@ to insert roadmap here
 ### ⚙️Project Hypothesis
 We suggest a hypothesis that implies **popular food**, as evidenced by a **high upvote ratio**, may demonstrate **reduced nutritional content**. We aim to investigate and substantiate or refute this assertion through further exploration and analysis.
 
-### ⚙️Roadmap Explation
+### ⚙️Roadmap Explanation
 
 
 
@@ -50,7 +50,7 @@ Data Cleaning Steps:
 We analysed data from reddit and observed some trend on posts with different flairs!
 - ![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)
     - Remarkably, within the top 10% of posts ranked by upvote ratio, those labeled with the "dessert"🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the second-highest, "poultry,"🍗 by more than half. It suggests a strong inclination among Reddit users towards favoring dessert-related posts.
-- ![Plot: All flairs are skewed to the left!](../plots/plot_all.jpg)
+- ![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)
     Furthermore, an overarching observation across all posts reveals a conspicuous left skew in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to approach a ratio of 1. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
 ### 📖Part 2 (Further Scraping and Cleaning)
