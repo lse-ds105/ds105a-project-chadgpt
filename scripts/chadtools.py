@@ -108,11 +108,11 @@ def get_ingredient_list(comment:str, client:OpenAI):
     '''
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
-        temperature=0.5,
+        temperature=0.2,
         seed=69,
         messages=[
             {
-                "role": "system", "content": "You are a professional chef and food scientist.",
+                "role": "system", "content": "You are a professional chef and food blogger.",
                 "role": "user", "content": "In the following recipe, disregard the cooking instructions, identify the food items without the quantities and list them in a string with semicolon as the delimiter:\n" + comment
             },
         ],
@@ -136,17 +136,18 @@ def get_cuisine(comment:str, client:OpenAI):
     '''
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
-        temperature=0.5,
+        temperature=0.3,
         seed=69,
         messages=[
             {
                 "role": "system", "content": "You are a professional chef and food reviewer.",
-                "role": "user", "content": "Identify the 5 most likely cuisines that the following recipe belongs to. List your answers in a string with semicolon as the delimiter:\n" + comment
+                "role": "user", "content": "Identify the most likely cuisine that the following recipe belongs to. Give your answer in 1 word.\n" + comment
             },
         ]
     )
-    cuisine_list = response.choices[0].message.content.split(";")
+    cuisine = response.choices[0].message.content.lower().strip()
+    # cuisine_list = response.choices[0].message.content.split(";")
+    # cuisine_list = [cuisine.lower().strip() for cuisine in cuisine_list if cuisine != '']
 
     # normalise all text to lower case
-    cuisine_list = [cuisine.lower().strip() for cuisine in cuisine_list if cuisine != '']
-    return cuisine_list[0]
+    return cuisine
