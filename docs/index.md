@@ -29,6 +29,7 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 - We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 - Example of data frame received from reddit:
     - <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+        - Full data frame shape: 2065 x 113
     - We received around **2065** recipes from the Reddit API, containing basic details like links, upvote ratios, post flairs, and upvote counts. The dataframe is raw and needs cleaning, with redundant columns to be removed
 - Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.  
 - Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.
@@ -39,6 +40,7 @@ Data Cleaning Steps:
 
 - Filtered data set Example
     - <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+        - Full data frame shape: 998 x 12
     - In this dataset, we have most of the information we require for initial analysis of the posts.🤩 We will move on to ingredient and recipe analysis in conjunction with data from BBC Good Food in part 2.
 
 
@@ -56,6 +58,9 @@ Approach:
 1. Obtain recipe titles and their respective nutritional data (calories, fat, fibre, sugar, protein etc) from BBC Good Food 
 - Sent a GET request to https://www.bbcgoodfood.com/search?q= 
 - Webscraping using a mixture of CSS and XPath selectors 
+- Example of filtered nutritional information and user ratings scraped
+    - <iframe src="bbc_data.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+        - Full data frame shape: 10011 x 11
 
 2. **Calculating cosine similarity score and merging columns based on the maximum similarity**  
 - Employed a NLP model- Sentence Transformers- to convert each recipe title into an embedding
@@ -63,10 +68,11 @@ Approach:
     - The closer the cosine similarity score is to 1, the more similar the recipes titles
 - Only retain the pairs where the cosine similarity score is above the threshold that we set (0.75), and these are considered matches
     - If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
-- This approach yields 555 recipes with matches, a sufficient number for us to conduct further analysis
+- This approach yields 467 recipes with matches, a sufficient number for us to conduct further analysis
 - Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
-    - Example of filtered nutritional information and user ratings scraped in Step 1
-    - <iframe src="bbc_data.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+- Example of merged dataframe between BBC Good Food and r/Recipe
+    - <iframe src="TO CHANGEEEE" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
+        - Full data frame shape: 467 x 20
 
 3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. \
 - TO ADD MORE EXPLANATION ONCE DONE
