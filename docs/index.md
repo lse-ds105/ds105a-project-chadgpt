@@ -33,9 +33,9 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 - Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.  
 - Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.
 Data Cleaning Steps:
-    - 1️⃣Filtering out posts with **non-English titles** was achieved through a custom function called "Chadtools", leveraging the Langid package.
-    - 2️⃣**Conversion** of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
-    - 3️⃣Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of **stricter regulations from that date onwards**, resulting in more consistently formatted posts.
+    - 1️⃣ Filtering out posts with **non-English titles** was achieved through a custom function called "Chadtools", leveraging the Langid package.
+    - 2️⃣ **Conversion** of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
+    - 3️⃣ Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of **stricter regulations from that date onwards**, resulting in more consistently formatted posts.
 
 - Filtered data set Example
     - <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
@@ -45,12 +45,12 @@ Data Cleaning Steps:
 ### Part 1 📊Analysis
 We analysed data from reddit and observed some trend on posts with different flairs!
 - ![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)
-    - Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry,"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.**
+    - Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry,"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base.
 - ![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)
     Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
 ### 📖Part 2 (Further Scraping and Cleaning)
-(to describe technical steps without too many details)
+
 #### ⚙️Linking r/recipes and BBC Good Food 
 Approach:
 1. Obtain recipe titles and their respective nutritional data (calories, fat, fibre, sugar, protein etc) from BBC Good Food 
@@ -68,7 +68,8 @@ Approach:
     - Example of filtered nutritional information and user ratings scraped in Step 1
     - <iframe src="bbc_data.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
 
-3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. 
+3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. \
+- TO ADD MORE EXPLANATION ONCE DONE
 
 ### Part 2 📊Analysis
 - Present findings
