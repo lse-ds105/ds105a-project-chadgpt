@@ -24,10 +24,6 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 ### ⚙️Project Hypothesis
 We suggest a hypothesis that implies **popular food**, as evidenced by a **high upvote ratio**, may demonstrate **reduced nutritional content**. We aim to investigate and substantiate or refute this assertion through further exploration and analysis.
 
-### ⚙️Roadmap Explanation
-
-
-
 ## 📋General Outline
 ### 📖Part 1 (Initial Scraping and Cleaning)
 - We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
