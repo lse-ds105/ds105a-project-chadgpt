@@ -19,7 +19,7 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 - [BBC Good Food](https://www.bbcgoodfood.com/)
 
 ## 📋PROJECT Roadmap
-to insert roadmap here
+![Plot: Project Roadmap!](project_chadgpt_roadmap.jpg)
 
 ### ⚙️Project Hypothesis
 We suggest a hypothesis that implies **popular food**, as evidenced by a **high upvote ratio**, may demonstrate **reduced nutritional content**. We aim to investigate and substantiate or refute this assertion through further exploration and analysis.
