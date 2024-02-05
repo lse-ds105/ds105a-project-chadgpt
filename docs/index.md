@@ -80,6 +80,7 @@ Approach:
 ### Part 2 📊Analysis
 - Present findings
 <iframe src="interactive_plot.html" style="width:100%; height:800px; border:none;"></iframe>
+<iframe src="upvote_ratio_vs_bbcgf_rating" style="width:100%; height:800px; border:none;"></iframe>
 
 ### 📖Overall Conclusion
 
