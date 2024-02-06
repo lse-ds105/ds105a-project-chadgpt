@@ -28,19 +28,19 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 ### 📖Part 1 (Initial Scraping and Cleaning)
 - We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 - Example of data frame received from reddit:
-    - <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
-        - Full data frame shape: 2065 x 113
+    - <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>     
+        Full data frame shape: 2065 x 113
     - We received around **2065** recipes from the Reddit API, containing basic details like links, upvote ratios, post flairs, and upvote counts. The dataframe is raw and needs cleaning, with redundant columns to be removed
 - Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.  
-- Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.
+- Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.  
 Data Cleaning Steps:
     - 1️⃣ Filtering out posts with **non-English titles** was achieved through a custom function called "Chadtools", leveraging the Langid package.
     - 2️⃣ **Conversion** of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
     - 3️⃣ Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of **stricter regulations from that date onwards**, resulting in more consistently formatted posts.
 
 - Filtered data set Example
-    - <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
-        - Full data frame shape: 998 x 12
+    - <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>   
+        Full data frame shape: 998 x 12
     - In this dataset, we have most of the information we require for initial analysis of the posts.🤩 We will move on to ingredient and recipe analysis in conjunction with data from BBC Good Food in part 2.
 
 
@@ -64,8 +64,8 @@ Approach:
   
 2. **Calculating cosine similarity score and merging columns based on the maximum similarity**  
 - Employed a NLP model- Sentence Transformers- to convert each recipe title into an embedding
-- Calculated the cosine similarity score between each pair of embeddings of Reddit and BBC Good Food recipe titles
-    - The closer the cosine similarity score is to 1, the more similar the recipes titles
+- Calculated the cosine similarity score between each pair of embeddings of Reddit and BBC Good Food recipe titles  
+    - The closer the cosine similarity score is to 1, the more similar the recipes titles  
 - Only retain the pairs where the cosine similarity score is above the threshold that we set (0.75), and these are considered matches
     - If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
 - This approach yields 467 recipes with matches, a sufficient number for us to conduct further analysis
