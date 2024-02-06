@@ -41,13 +41,13 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
         Full data frame shape: 2065 x 113
 
     -   We received around **2065** recipes from the Reddit API, containing basic details like links, upvote ratios, post flairs, and upvote counts. The dataframe is raw and needs cleaning, with redundant columns to be removed
--   Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.\
+-   Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.
 -   Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.\
     Data Cleaning Steps:
     -   1️⃣ Filtering out posts with **non-English titles** was achieved through a custom function called "Chadtools", leveraging the Langid package.
     -   2️⃣ **Conversion** of data types to more efficient formats (such as from int64 to int16) was performed to enhance computational efficiency.
     -   3️⃣ Posts dated before August 31, 2020, were excluded. This decision was influenced by r/recipes' implementation of **stricter regulations from that date onwards**, resulting in more consistently formatted posts.
--   Filtered data set Example
+-   Example of the filtered data set 
     -   <iframe src="df_filtered.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;">
 
         </iframe>
@@ -58,15 +58,26 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 
 ### Part 1 📊 Initial Analysis of Reddit Data
 
-We analysed data from reddit and observed some trends on posts with different flairs! ![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg) - Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base. ![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg) - Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
+We analysed data from reddit and observed some trends on posts with different flairs!  
+![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)   
+- Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base.   
+
+![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)   
+- Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
 ### 📖Part 2 (Further Scraping and Cleaning)
 
 #### ⚙️Linking r/recipes and BBC Good Food
 
-Approach: 1. Obtain recipe titles and their respective nutritional data (calories, fat, fibre, sugar, protein etc) from BBC Good Food - Sent a GET request to https://www.bbcgoodfood.com/search?q= - Webscraping using a mixture of CSS and XPath selectors - Example of filtered nutritional information and user ratings scraped - <iframe src="bbc_data.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe> - Full data frame shape: 10011 x 11
+Approach:   
+1. Obtain recipe titles and their respective nutritional data (calories, fat, fibre, sugar, protein etc) from BBC Good Food   
+- Sent a GET request to https://www.bbcgoodfood.com/search?q=   
+- Webscraping using a mixture of CSS and XPath selectors   
+- Example of filtered nutritional information and user ratings scraped   
+- <iframe src="bbc_data.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888"></iframe>   
+    - Full data frame shape: 10011 x 11
 
-2.  **Calculating cosine similarity score and merging columns based on the maximum similarity**\
+2.  **Calculating cosine similarity score and merging columns based on the maximum similarity**  
 
 -   Employed a NLP model - `sklearn's SentenceTransformers` - to convert each recipe title into an embedding
 -   Calculated the cosine similarity score between each pair of embeddings of Reddit and BBC Good Food recipe titles
@@ -75,7 +86,7 @@ Approach: 1. Obtain recipe titles and their respective nutritional data (calorie
     -   If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
 -   This approach yields 467 recipes with matches, a sufficient number for us to conduct further analysis
 -   Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
--   Example of merged dataframe between BBC Good Food and r/Recipe
+-   Example of merged dataframe between BBC Good Food and r/Recipes
     -   <iframe src="merged_data_for_analysis" style="width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;">
 
         </iframe>
@@ -100,7 +111,7 @@ Approach: 1. Obtain recipe titles and their respective nutritional data (calorie
 
 The above plot shows that there is no clear relationship between the popularity of a recipe (using Reddit upvote ratio as a proxy) and the healthiness of a recipe (using calorie count as a proxy)-- this means that our initial hypothesis is incorrect! By choosing select flairs on the legend, we see that this lack of correlation holds regardless of the category of food that the recipe falls under. One possible reason for this lack of correlation is that the motivation behind upvoting may extend beyond the perceived healthiness of a recipe. Visual appeal, creativity, the story behind the recipe, or a desire to support the OP (Original Poster) can all influence upvotes more than nutritional content.  
   
-Follow the link on each point (using cmd+click/ ctrl+click) to find the recipe that is both well-received and meets your nutritional goals!   
+Follow the link on each point (using **cmd+click/ ctrl+click**) to find the recipe that is both well-received and meets your nutritional goals!   
 
 <iframe src="upvote_ratio_vs_bbcgf_rating" style="width:100%; height:700px; border:none;">
 
@@ -115,7 +126,6 @@ However, there are some interesting outliers.
 - However, the cosine similarity test is purely based on the titles (without contextual information from the comments to signal that this is a troll post), so the corresponding nutrition data and user ratings from BBC Good Food will be inaccurate.
 
 2.  Easter Egg Blondies
-
 -   This post has a high Reddit upvote ratio, yet it has the lowest BBC Good Food rating.
 -   Investigating the corresponding [post](https://www.bbcgoodfood.com/recipes/easter-egg-blondies) on BBC Good Food, we can tell from the comments that the recipe is flawed, both in its procedure and quantities of ingredients, and does not produce a tasty dish.
 -   This exposes an imperfection in our approach-- ingredients and cooking procedure have a huge impact on how well a post is received, despite the Reddit and BBC Good Food recipe titles being highly similar.
