@@ -17,7 +17,7 @@ for (i in df$cuisine) {
             grid.label.size = 5,
             axis.label.size = 5, # Affects the names of the variables
             group.line.width = 1,
-            group.point.size = 2,   # Simply the size of the points
+            group.point.size = 2,   # size of the the points
             gridline.min.linetype = 1,
             gridline.mid.linetype = 2,
             gridline.max.linetype = 1
