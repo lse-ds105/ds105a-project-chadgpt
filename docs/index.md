@@ -79,9 +79,22 @@ Approach:
 
 ### Part 2 📊Analysis
 <iframe src="interactive_plot.html" style="width:100%; height:700px; border:none;"></iframe>
-add explanation
+This plot shows that there is no clear relationship between the popularity of a recipe (using Reddit upvote ratio as a proxy) and the healthiness of a recipe (using calorie count as a proxy)-- this shows that our hypothesis is incorrect! By choosing select flairs on the legend, we see that this lack of correlation holds regardless of the category of food that the recipe falls under. One possible reason for this lack of correlation is that the motivation behind upvoting may extend beyond the perceived healthiness of a recipe. Visual appeal, creativity, the story behind the recipe, or a desire to support the OP (Original Poster) can all influence upvotes more than nutritional content.
+
 <iframe src="upvote_ratio_vs_bbcgf_rating" style="width:100%; height:700px; border:none;"></iframe>
-add explanation 
+We observe a strong association between higher Reddit upvote ratios and higher BBC Good Food ratings. One possible reason is that some recipes may have a universal appeal due to their taste or prevalance across many cuisines. These recipes naturally attract positive attention and higher ratings on platforms like BBC Good Food and similarly receive more upvotes on Reddit due to their broad appeal.
+
+However, there are some interesting outliers. 
+1. British Baked Cabbage with Cheese Casserole
+- This is the post with the lowest upvote ratio on Reddit, yet it has a relatively high BBC Good Food rating.
+- When we click on this point (using cmd+click/ ctrl+click) and observe the Reddit post and comments for this recipe, we can tell that this post is likely a troll post.
+- However, the cosine similarity test is purely based on the titles (without contextual information from the comments to signal that this is a troll post), so the corresponding nutrition data and user ratings from BBC Good Food will be inaccurate. 
+
+2. Easter Egg Blondies 
+- This post has a high Reddit upvote ratio, yet it has the lowest BBC Good Food rating. 
+- Investigating this [post](https://www.bbcgoodfood.com/recipes/easter-egg-blondies) on BBC Good Food, we can tell from the comments that the recipe is flawed, both in its procedure and quantities of ingredients, and does not produce a tasty dish. 
+- This exposes an imperfection in our approach-- ingredients and cooking procedure have a huge impact on how well a post is received, despite the Reddit and BBC Good Food recipe titles being highly similar. 
+
 
 ### 📖Overall Conclusion
 
@@ -92,7 +105,7 @@ add explanation
     - To overcome this challenge, we iterated over a list of flair names for a specific subreddit and combining post data from each flair by extending a list!
 
 #### ❎ 2:Extracting Reddit recipes and ingredients
-- Extracting the OP's (original poster's) comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
+- Extracting the OP's comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
     - To overcome this challenge, we made an assumption: The OP's comment we want will be LONGER 
     all other comments by the OP. Through this, we are able to target the OP's original comment with ingredients and instructions.
 
