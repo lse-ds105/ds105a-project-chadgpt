@@ -107,18 +107,47 @@ def get_ingredient_list(comment:str, client:OpenAI):
         ingredient_list (list): a list of ingredients
     '''
     response = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    temperature=0.5,
-    seed=69,
-    messages=[
-        {
-            "role": "system", "content": "You are a professional chef and food scientist.",
-            "role": "user", "content": "In the following recipe, disregard the cooking instructions, identify the food items without the quantities and list them in a string with semicolon as the delimiter:\n" + comment
-        },
-    ],
+        model="gpt-3.5-turbo",
+        temperature=0.2,
+        seed=69,
+        messages=[
+            {
+                "role": "system", "content": "You are a professional chef and food blogger.",
+                "role": "user", "content": "In the following recipe, disregard the cooking instructions, identify the food items without the quantities and list them in a string with semicolon as the delimiter:\n" + comment
+            },
+        ],
     )
     ingredient_list = response.choices[0].message.content.split(";")
 
     # normalise all text to lower case
     ingredient_list = [ingredient.lower().strip() for ingredient in ingredient_list if ingredient != '']
     return ingredient_list
+
+def get_cuisine(comment:str, client:OpenAI):
+    '''
+    Identifies the most likely cuisine from a recipe using GPT-3.5-turbo
+    
+    Args: 
+        comment (str): the comment containing the recipe
+        client (OpenAI): the OpenAI client
+        
+    Returns:
+        cuisine (str): the most likely cuisine according to GPT
+    '''
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        temperature=0.3,
+        seed=69,
+        messages=[
+            {
+                "role": "system", "content": "You are a professional chef and food reviewer.",
+                "role": "user", "content": "Identify the most likely cuisine that the following recipe belongs to. Give your answer in 1 word.\n" + comment
+            },
+        ]
+    )
+    cuisine = response.choices[0].message.content.lower().strip()
+    # cuisine_list = response.choices[0].message.content.split(";")
+    # cuisine_list = [cuisine.lower().strip() for cuisine in cuisine_list if cuisine != '']
+
+    # normalise all text to lower case
+    return cuisine
