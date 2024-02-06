@@ -11,7 +11,7 @@ for (i in df$cuisine) {
         filter(cuisine == i)
     plot <- selected_df %>%
         ggradar(
-            plot.title = paste0("Nutrient Profile of ", i, "Cuisine"),
+            plot.title = paste0("Nutrient Profile of ", i, " Cuisine"),
             font.radar = 'roboto',
             values.radar = c(0, 5, 10),
             grid.label.size = 5,
