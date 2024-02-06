@@ -17,8 +17,12 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 
 ### Our Data Source
 
--   [r/recipe](https://www.reddit.com/r/recipes/)
+-   [r/recipes](https://www.reddit.com/r/recipes/)
 -   [BBC Good Food](https://www.bbcgoodfood.com/)
+
+### Motivation
+
+Our project's origin story began on a Thursday night as the four of us gathered to brainstorm ideas before our DS105A class. Hungry and in need of a break, we ventured to a nearby chicken shop known for its delectable spicy sauce. Curious about its secret ingredients, we turned to Reddit for answers. To our delight, we stumbled upon a well-organized subreddit dedicated to culinary exploration. Inspired by our discovery, we resolved to embark on this project and share our delightful culinary findings with our fellow classmates.
 
 ## 📋PROJECT Roadmap
 
