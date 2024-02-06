@@ -44,7 +44,7 @@ Data Cleaning Steps:
     - In this dataset, we have most of the information we require for initial analysis of the posts.🤩 We will move on to ingredient and recipe analysis in conjunction with data from BBC Good Food in part 2.
 
 
-### Part 1 📊Analysis
+### Part 1 📊 Initial Analysis of Reddit Data 
 We analysed data from reddit and observed some trend on posts with different flairs!
 - ![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)
     - Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry,"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base.
@@ -77,7 +77,7 @@ Approach:
 3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. \
 - TO ADD MORE EXPLANATION ONCE DONE
 
-### Part 2 📊Analysis
+### Part 2 📊 Analysis of Merged Reddit and BBC Good Food Data
 <iframe src="interactive_plot.html" style="width:100%; height:700px; border:none;"></iframe>
 The above plot shows that there is no clear relationship between the popularity of a recipe (using Reddit upvote ratio as a proxy) and the healthiness of a recipe (using calorie count as a proxy)-- this shows that our hypothesis is incorrect! By choosing select flairs on the legend, we see that this lack of correlation holds regardless of the category of food that the recipe falls under. One possible reason for this lack of correlation is that the motivation behind upvoting may extend beyond the perceived healthiness of a recipe. Visual appeal, creativity, the story behind the recipe, or a desire to support the OP (Original Poster) can all influence upvotes more than nutritional content.
 
