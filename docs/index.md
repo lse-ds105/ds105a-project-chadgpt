@@ -22,7 +22,7 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 
 ### Motivation
 
-Our project's origin story began on a Thursday night as the four of us gathered to brainstorm ideas before our DS105A class. Hungry and in need of a break, we ventured to a nearby chicken shop known for its delectable spicy sauce. Curious about its secret ingredients, we turned to Reddit for answers. To our delight, we stumbled upon a well-organized subreddit dedicated to culinary exploration. Inspired by our discovery, we resolved to embark on this project and share our delightful culinary findings with our fellow classmates.
+Our project's origin story began on a Thursday night as the four of us gathered to brainstorm ideas before our DS105A class. Hungry and in need of a break, we ventured to a nearby chicken shop known for its delectable spicy sauce. Curious about its secret ingredients, we turned to Reddit for answers. To our delight, we stumbled upon a well-organized subreddit dedicated to culinary exploration. Inspired by our discovery, we decided to explore our findings on r/recipes and share with our fellow coursemates.
 
 ## 📋PROJECT Roadmap
 
@@ -107,7 +107,7 @@ Approach:
 
 - We specified a seed value to ensure that the results were reproducible
 
-### Part 2 📊 Analysis of Merged Reddit and BBC Good Food Data
+### Part 2A 📊 Analysis of Merged Reddit and BBC Good Food Data
 
 <iframe src="interactive_plot.html" style="width:100%; height:700px; border:none;">
 
@@ -133,6 +133,15 @@ However, there are some interesting outliers.
 -   This post has a high Reddit upvote ratio, yet it has the lowest BBC Good Food rating.
 -   Investigating the corresponding [post](https://www.bbcgoodfood.com/recipes/easter-egg-blondies) on BBC Good Food, we can tell from the comments that the recipe is flawed, both in its procedure and quantities of ingredients, and does not produce a tasty dish.
 -   This exposes an imperfection in our approach-- ingredients and cooking procedure have a huge impact on how well a post is received, despite the Reddit and BBC Good Food recipe titles being highly similar.
+
+### Part 2B 📊 Analysis of extracted cuisine and ingredients
+
+blah blah blah
+
+blah blah blah
+
+- insert top 10 ingredient list
+    - For all our fellow LSE students out there, when you move into your new accomodation next year, these 10 ingredients are your move-in kitchen staples for you to become a meal prep monster! Because most of the recipes use these ingredients!
 
 ### 📖Overall Conclusion
 
