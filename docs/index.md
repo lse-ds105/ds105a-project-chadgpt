@@ -78,9 +78,9 @@ Approach:
 - TO ADD MORE EXPLANATION ONCE DONE
 
 ### Part 2 📊Analysis
-<iframe src="interactive_plot.html" style="width:100%; height:800px; border:none;"></iframe>
+<iframe src="interactive_plot.html" style="width:100%; height:700px; border:none;"></iframe>
 add explanation
-<iframe src="upvote_ratio_vs_bbcgf_rating" style="width:100%; height:800px; border:none;"></iframe>
+<iframe src="upvote_ratio_vs_bbcgf_rating" style="width:100%; height:700px; border:none;"></iframe>
 add explanation 
 
 ### 📖Overall Conclusion
