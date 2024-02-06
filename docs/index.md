@@ -98,7 +98,9 @@ Approach: 1. Obtain recipe titles and their respective nutritional data (calorie
 
 </iframe>
 
-The above plot shows that there is no clear relationship between the popularity of a recipe (using Reddit upvote ratio as a proxy) and the healthiness of a recipe (using calorie count as a proxy)-- this shows that our hypothesis is incorrect! By choosing select flairs on the legend, we see that this lack of correlation holds regardless of the category of food that the recipe falls under. One possible reason for this lack of correlation is that the motivation behind upvoting may extend beyond the perceived healthiness of a recipe. Visual appeal, creativity, the story behind the recipe, or a desire to support the OP (Original Poster) can all influence upvotes more than nutritional content.
+The above plot shows that there is no clear relationship between the popularity of a recipe (using Reddit upvote ratio as a proxy) and the healthiness of a recipe (using calorie count as a proxy)-- this means that our initial hypothesis is incorrect! By choosing select flairs on the legend, we see that this lack of correlation holds regardless of the category of food that the recipe falls under. One possible reason for this lack of correlation is that the motivation behind upvoting may extend beyond the perceived healthiness of a recipe. Visual appeal, creativity, the story behind the recipe, or a desire to support the OP (Original Poster) can all influence upvotes more than nutritional content.  
+  
+Follow the link on each point (using cmd+click/ ctrl+click) to find the recipe that is both well-received and meets your nutritional goals!   
 
 <iframe src="upvote_ratio_vs_bbcgf_rating" style="width:100%; height:700px; border:none;">
 
@@ -106,7 +108,11 @@ The above plot shows that there is no clear relationship between the popularity 
 
 We observe a strong association between higher Reddit upvote ratios and higher BBC Good Food ratings. One possible reason is that some recipes may have a universal appeal due to their taste or prevalance across many cuisines. These recipes naturally attract positive attention and higher ratings on platforms like BBC Good Food and similarly receive more upvotes on Reddit due to their broad appeal.
 
-However, there are some interesting outliers. 1. British Baked Cabbage with Cheese Casserole - This is the post with the lowest upvote ratio on Reddit, yet it has a relatively high BBC Good Food rating. - When we click on this point (using cmd+click/ ctrl+click) and observe the Reddit post and comments for this recipe, we can tell that this post is likely a troll post. - However, the cosine similarity test is purely based on the titles (without contextual information from the comments to signal that this is a troll post), so the corresponding nutrition data and user ratings from BBC Good Food will be inaccurate.
+However, there are some interesting outliers.  
+1. British Baked Cabbage with Cheese Casserole 
+- This is the post with the lowest upvote ratio on Reddit, yet it has a relatively high BBC Good Food rating. 
+- When we follow the link of this point on the plot and observe the Reddit post and comments for this recipe, we can tell that this post is likely a troll post. 
+- However, the cosine similarity test is purely based on the titles (without contextual information from the comments to signal that this is a troll post), so the corresponding nutrition data and user ratings from BBC Good Food will be inaccurate.
 
 2.  Easter Egg Blondies
 
