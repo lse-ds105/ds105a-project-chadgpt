@@ -46,10 +46,10 @@ Data Cleaning Steps:
 
 ### Part 1 📊 Initial Analysis of Reddit Data 
 We analysed data from reddit and observed some trend on posts with different flairs!
-- ![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)
-    - Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry,"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base.
-- ![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)
-    Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
+![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)
+- Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base.
+![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)
+- Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
 ### 📖Part 2 (Further Scraping and Cleaning)
 
@@ -61,7 +61,7 @@ Approach:
 - Example of filtered nutritional information and user ratings scraped
     - <iframe src="bbc_data.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
         - Full data frame shape: 10011 x 11
-
+  
 2. **Calculating cosine similarity score and merging columns based on the maximum similarity**  
 - Employed a NLP model- Sentence Transformers- to convert each recipe title into an embedding
 - Calculated the cosine similarity score between each pair of embeddings of Reddit and BBC Good Food recipe titles
@@ -73,7 +73,7 @@ Approach:
 - Example of merged dataframe between BBC Good Food and r/Recipe
     - <iframe src="merged_data_for_analysis" style="width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;"></iframe>
         - Full data frame shape: 467 x 20
-
+  
 3. We now analyse the ingredients from Reddit posts using ChatGPT 3.5 to get a list of ingredient keywords. \
 - TO ADD MORE EXPLANATION ONCE DONE
 
@@ -89,7 +89,7 @@ However, there are some interesting outliers.
 - This is the post with the lowest upvote ratio on Reddit, yet it has a relatively high BBC Good Food rating.
 - When we click on this point (using cmd+click/ ctrl+click) and observe the Reddit post and comments for this recipe, we can tell that this post is likely a troll post.
 - However, the cosine similarity test is purely based on the titles (without contextual information from the comments to signal that this is a troll post), so the corresponding nutrition data and user ratings from BBC Good Food will be inaccurate. 
-
+  
 2. Easter Egg Blondies 
 - This post has a high Reddit upvote ratio, yet it has the lowest BBC Good Food rating. 
 - Investigating the corresponding [post](https://www.bbcgoodfood.com/recipes/easter-egg-blondies) on BBC Good Food, we can tell from the comments that the recipe is flawed, both in its procedure and quantities of ingredients, and does not produce a tasty dish. 
