@@ -132,6 +132,8 @@ cython_debug/
 .DS_Store
 credentials.json
 sandbox.ipynb
+sandbox.r
+sandbox.qmd
 imgs/
 data/comments.json
 data/all_comments.json
