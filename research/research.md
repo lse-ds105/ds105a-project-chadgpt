@@ -26,3 +26,7 @@ https://www.bbcgoodfood.com/howto/guide/good-food-guide-healthy-eating
 - Low fat: 12g or less per serving
 - Low sugar: 15g or less per serving
 - Low salt: 1.5g or less per serving
+- Low saturated fat: 5g or less per serving
+- Low calorie: 500g or less per serving (main course) OR 250g or less per serving (breakfast) or 150g OR less per serving (starter or dessert)
+- High protein: 10g or more per serving
+- High fibre: 5g or more per serving
