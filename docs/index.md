@@ -1,7 +1,5 @@
 # DS105A-project-chadgpt 😎😎😎😎
 
-Project **Chadgpt**
-
 ## 📋Team Members
 
 -   Zicheng Liu (zcliu35) \| BSc in Economics
@@ -36,8 +34,8 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 
 ### 📖Part 1 (Initial Scraping and Cleaning)
 
--   We started off with r/recipe, where we used reddit api to get the data that we wanted (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
--   Example of data frame received from reddit:
+-   We started off with r/recipe, where we used the Reddit API to get the data that we want (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
+-   Example of raw data frame obtained from reddit:
     -   <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;">
 
         </iframe>
@@ -58,7 +56,7 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 
         Full data frame shape: 998 x 12
 
-    -   In this dataset, we have most of the information we require for initial analysis of the posts.🤩 We will move on to ingredient and recipe analysis in conjunction with data from BBC Good Food in part 2.
+    -   In this dataset, we have most of the information we require for initial analysis of the posts.🤩 We will move on to ingredient and recipe analysis in conjunction with data from BBC Good Food in Part 2.
 
 ### Part 1 📊 Initial Analysis of Reddit Data
 
@@ -90,7 +88,7 @@ Approach:
     -   If there are multiple matches of different BBC Good Food titles to the same Reddit recipe title, we only keep the match with the highest cosine similarity score
 -   This approach yields 467 recipes with matches, a sufficient number for us to conduct further analysis
 -   Upon finding a match, we integrate additional details from the BBC Good Food dataset into our existing Reddit dataset
--   Example of merged dataframe between BBC Good Food and r/Recipes
+-   Example of merged dataframe between BBC Good Food and r/recipes
     -   <iframe src="merged_data_for_analysis" style="width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;">
 
         </iframe>
@@ -184,7 +182,7 @@ We also calculated the average nutritional data (calories, carbohydates, fat, sa
 - On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that they are unhealthy.  
   
 For all our fellow LSE students out there, when you move into your new accommodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!  
-<iframe src="ingredient_frequency.html" style="width: 200px; height: 400px; border:none;"></iframe>   
+<iframe src="ingredient_frequency.html" style="width: 200px; height: 350px; border:none;"></iframe>   
 
 ### 📖Overall Conclusion
 We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post.
