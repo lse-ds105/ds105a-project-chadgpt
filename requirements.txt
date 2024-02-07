@@ -1,15 +1,16 @@
 tqdm==4.65.0
+requests
 pandas>=2.1
 numpy>=1.21
 datetime
 plotnine>0.12
 altair>=5
-pyaml>=6.0.1
 scrapy
 langid
-sklearn
+scikit-learn
 sentence-transformers
 openai
+ipykernel
 
 # Our own scripts (uncomment if we are using proper py package)
 # ./scripts/

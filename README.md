@@ -8,11 +8,12 @@ Our project focuses on exploring and analysing recipes from r/recipes to assist 
 - Investigation of the relationship between recipe popularity and nutritional content
 - Data-driven recommendations for nutritious meals  
 
-## 📚 Preperation  
+## 📚 Preparation  
 If you want to replicate the analysis in this notebook, you will need to:    
 1. Clone this repository to your computer 
 2. Add it to your VSCode workspace 
-3. Create a Reddit account and take note of your credentials (Reddit username, Reddit password, client ID, client secret) 
+3. Create a Reddit developer account and take note of your credentials (Reddit username, Reddit password, client ID, client secret) 
+4. Create an OpenAI developer account and take note of your API key. This requires approximately $3 in GPT-3.5-turbo tokens.
 4. Create a plain text file called `credentials.json` and add your Reddit credentials there:  
 
     ```json
@@ -20,15 +21,15 @@ If you want to replicate the analysis in this notebook, you will need to:
         "reddit_username": "<your Reddit username>",
         "reddit_password": "<your Reddit password>",
         "app_client_id": "<your Reddit app's client ID>",
-        "app_client_secret": "<your Reddit app's client secret>"
+        "app_client_secret": "<your Reddit app's client secret>",
+        "openai_api_key": "<your OpenAI API key>"
     }
-    ```  
+    ```
 5. Use the `requirements.txt` file provided in this repository to install the required packages: 
     ```bash
     pip install -r requirements.txt
     ```
 
 ### Generative AI acknowledgement
-- We wrote the notebooks in this repository on VSCode with GitHub Copilot extension activated. For code, we usually let Copilot autocomplete the code, check if it is correct and run the code to see if it accomplishes what we want. 
+- We wrote the notebooks in this repository on VSCode with GitHub Copilot extension activated. For code, we usually let Copilot autocomplete the code, check if it is correct and run the code to see if it accomplishes what we want.
 - We used ChatGPT by giving specific prompts to help us generate ideas on how to proceed. We also used it to help with finding errors in our code.
-
