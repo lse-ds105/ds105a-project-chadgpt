@@ -31,4 +31,16 @@ If you want to replicate the analysis in this notebook, you will need to:
 ### Generative AI acknowledgement
 - We wrote the notebooks in this repository on VSCode with GitHub Copilot extension activated. For code, we usually let Copilot autocomplete the code, check if it is correct and run the code to see if it accomplishes what we want. 
 - We used ChatGPT by giving specific prompts to help us generate ideas on how to proceed. We also used it to help with finding errors in our code.
+    - ChatGPT played a significant role in familiarizing us with the appropriate functions, in addition to consulting official documentation extensively. It was utilized both for debugging purposes and to inspire new ideas.
+    - Example of use of ChatGPT 
+        - Learn interactive plotting using Altair. An example plot could be: "Can you provide a brief overview of how to create interactive plots using Altair in Python?" ChatGPT will then generate a response that outlines the steps involved in creating interactive plots with Altair, explaining concepts such as encoding data, specifying chart types, and adding interactivity features like tooltips and selection.
+
+        - Brainstorming comparisons we can do using nutritional values and ingredients. Prompt: "What are some potential comparisons we can make using nutritional values and ingredients data?" ChatGPT could then generate ideas such as comparing the nutritional profiles of different cuisines, analyzing the most common ingredients used."
+
+
+
+
+
+
+
 
