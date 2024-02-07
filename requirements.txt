@@ -1,18 +1,15 @@
 tqdm==4.65.0
 pandas>=2.1
+numpy>=1.21
+datetime
 plotnine>0.12
 altair>=5
 pyaml>=6.0.1
-spacy>=3.7.2
-spacy-transformers
 scrapy
 langid
 sklearn
 sentence-transformers
 openai
 
-# spacy models
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-en-core-web-trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl
 # Our own scripts (uncomment if we are using proper py package)
 # ./scripts/
