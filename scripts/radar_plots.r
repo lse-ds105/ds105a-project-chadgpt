@@ -1,8 +1,6 @@
-'''
-This script generates radar plots for each cuisine in the dataset.
-This script uses the ggradar package to generate the radar plots, which is based off ggplot2.
-Run install.packages("ggradar") to install the ggradar package.
-'''
+# This script generates radar plots for each cuisine in the dataset.
+# This script uses the ggradar package to generate the radar plots, which is based off ggplot2.
+# Run install.packages("ggradar") to install the ggradar package.
 
 library(ggplot2)
 library(tidyverse)

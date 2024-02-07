@@ -14,7 +14,7 @@ If you want to replicate the analysis in this notebook, you will need to:
 2. Add it to your VSCode workspace 
 3. Create a Reddit developer account and take note of your credentials (Reddit username, Reddit password, client ID, client secret) 
 4. Create an OpenAI developer account and take note of your API key. This requires approximately $3 in GPT-3.5-turbo tokens.
-4. Create a plain text file called `credentials.json` and add your Reddit credentials there:  
+5. Create a plain text file called `credentials.json` and add your Reddit credentials there:  
 
     ```json
     {
@@ -25,10 +25,23 @@ If you want to replicate the analysis in this notebook, you will need to:
         "openai_api_key": "<your OpenAI API key>"
     }
     ```
-5. Use the `requirements.txt` file provided in this repository to install the required packages: 
+6. Use the `requirements.txt` file provided in this repository to install the required packages: 
     ```bash
     pip install -r requirements.txt
     ```
+
+7. Run each noteboook in order of numbering.
+
+8. Install R.
+
+9. Install the required dependencies with the following code:
+    ```r
+    install.packages("ggplot2")
+    install.packages("tidyverse")
+    install.packages("ggradar")
+    ```
+
+10. Go to the `scripts` folder and run  `radar_plots.r`.
 
 ### Generative AI acknowledgement
 - We wrote the notebooks in this repository on VSCode with GitHub Copilot extension activated. For code, we usually let Copilot autocomplete the code, check if it is correct and run the code to see if it accomplishes what we want.
