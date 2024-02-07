@@ -30,5 +30,7 @@ If you want to replicate the analysis in this notebook, you will need to:
 
 ### Generative AI acknowledgement
 - We wrote the notebooks in this repository on VSCode with GitHub Copilot extension activated. For code, we usually let Copilot autocomplete the code, check if it is correct and run the code to see if it accomplishes what we want. 
-- We used ChatGPT by giving specific prompts to help us generate ideas on how to proceed. We also used it to help with finding errors in our code.
+- We used ChatGPT by giving it specific prompts to help us generate ideas and find errors in our code. For instance, we asked ChatGPT for methods we could use to filter out non-English posts. ChatGPT was able to give us different methods such as Regex, Langid and spaCy and their pros and cons. This allowed us to gain a broad overview of possible ways forward. After having a basic understanding of each method, we would then read the official documentation afterwards to write our code. ChatGPT was also very helpful in giving us ideas for our visualisations. For instance, we gave ChatGPT a list of the nutritional data we had collected and asked for ideas on what interesting visualisations we could make. ChatGPT gave us some suggestions such as radar charts, frequency tables, histograms and correlation heatmaps.
+
+
 
