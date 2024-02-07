@@ -141,7 +141,7 @@ blah blah blah
 blah blah blah
 
 - insert top 10 ingredient list
-    - For all our fellow LSE students out there, when you move into your new accomodation next year, these 10 ingredients are your move-in kitchen staples for you to become a meal prep monster! Because most of the recipes use these ingredients!
+    - For all our fellow LSE students out there, when you move into your new accomodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!
 
 ### 📖Overall Conclusion
 We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post.
