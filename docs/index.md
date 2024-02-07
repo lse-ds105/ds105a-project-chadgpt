@@ -60,12 +60,12 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 
 ### Part 1 📊 Initial Analysis of Reddit Data
 
-We analysed data from reddit and observed some trends on posts with different flairs!  
+We analysed data from Reddit and observed some trends on posts with different flairs!  
 ![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)   
-- Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base.   
+- Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil a wider range of dietary restrictions and thus appeal to a larger audience base.   
 
 ![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)   
-- Furthermore, an overarching observation across all posts reveals a **conspicuous left skew**(longer tail on the left) in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
+- Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** (longer left-tail) in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
 ### 📖Part 2 (Further Scraping and Cleaning)
 
@@ -185,16 +185,16 @@ For all our fellow LSE students out there, when you move into your new accommoda
 <iframe src="ingredient_frequency.html" style="width: 200px; height: 350px; border:none;"></iframe>   
 
 ### 📖Overall Conclusion
-We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post. Nevertheless, in our culinary exploration, we still managed to make a number of interesting findings which we did not expect. 
+We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post. Nevertheless, in our culinary exploration, we still managed to make a number of interesting findings as documented above which we did not expect. 
 
-We recognize that our project is not without its built-in challenges. For example, while we've linked recipes from r/recipes and BBC Good Food using their titles as a basis for comparison, there's a chance that recipes bearing the same name may actually vary significantly in preparation and cooking technique. Such discrepancies could result in different end products, which our approach based solely on titles might not capture. We're aware that fully accounting for these nuances is quite a formidable task at present, yet we're confident in the robustness of our current analysis. Maybe, with further refinement of our skills and methods, we'll one day be able to address these complexities head-on.
+We recognize that our project and approach is not without its limitations. For example, while we have linked recipes from r/recipes and BBC Good Food using their titles as a basis for comparison, there is a chance that recipes bearing the same name may actually vary significantly in preparation and cooking technique. Such discrepancies could result in end products with different nutritional values, which our approach based solely on titles might not capture. We are aware that fully accounting for these nuances is quite a formidable task at present, yet we're confident in the robustness of our current analysis. Perhaps with further refinement of our skills and methods, we will one day be able to address these challenges head-on.
 
 ### 📖Challenges
 
 #### ❎ 1: Reddit API Limits
 
 -   Reddit's API limits a search query to 250 results only
-    -   To overcome this challenge, we iterated over a list of flair names for a specific subreddit and combining post data from each flair by extending a list!
+    -   To overcome this challenge, we iterated over a list of flair names for a specific subreddit and combined post data from each flair by extending a list!
 
 #### ❎ 2:Extracting Reddit recipes and ingredients
 
@@ -203,7 +203,7 @@ We recognize that our project is not without its built-in challenges. For exampl
 
 #### ❎ 3: Analysing Reddit recipes and ingredients
 
--   Analysing the ingredient lists provided by OP on Reddit was difficult, as there was a lot of variance and there were no specific subreddit rules regarding the format of ingredient lists. The ingredients were often not well-formatted, making it difficult identify the exact ingredient using NLP. For instance, it was challenging to get Spacy or Regex to identify that the main ingredient in the line "1 clove of garlic, minced" was "garlic". To overcome this challenge, we decided to use ChatGPT 3.5, as it is a very well-trained model that proved to be much better at identifying the primary ingredients mentioned by the OP. (insert proof of Struggle using regex?)
+-   Analysing the ingredient lists provided by the OP on Reddit was difficult, as there was a lot of variance and the formatting of ingredient lists still differed despite the implementation of stricter regulations on the format of posts in the subreddit. The ingredients were often not well-formatted, making it difficult identify the exact ingredient using NLP. For instance, it was challenging to get Spacy or Regex to identify that the main ingredient in the line "1 clove of garlic, minced" was "garlic". To overcome this challenge, we decided to use ChatGPT 3.5, as it is a very well-trained model that proved to be much better at identifying the primary ingredients when a high variation in the formatting is present.
 
 ## 📋Appendix
 
