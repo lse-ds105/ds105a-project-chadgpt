@@ -136,8 +136,8 @@ However, there are some interesting outliers.
 
 ### Part 2B 📊 Analysis of extracted cuisine and ingredients
 - We found the top 10 most common cuisines featured across Reddit and BBC Good Food. Interestingly, ...
-- We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as greater protein and fibre is generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart. (explain some cool findings)
-Notably, Italian cuisine has the most calories, while Greek cuisine has the lowest calories. For the gymbros at LSE, they can consider cooking more XX cuisine for its high protein content and building muscle. 
+- We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart. (explain some cool findings)
+- Notably, Italian cuisine has the most calories, while Greek cuisine has the lowest calories. For the gymbros at LSE, they can consider cooking more XX cuisine for its high protein content and building muscle. 
 blah blah blah
 
 blah blah blah
