@@ -146,7 +146,8 @@ We obtained the top 10 most common cuisines featured on Reddit and for the remai
     - Chinese cuisine rarely contain butter in their recipes  
 
 - We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart.
-- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). For the more health conscious students at LSE, Chinese cuisine may be the way to go!
+- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). Indian, Japanese and Thai food also fare pretty well, with most indicators lying below the threshold. For the more health conscious students at LSE, Chinese cuisine may be the way to go!
+- On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that they are unhealthy.
 
 
 <html lang="en">
