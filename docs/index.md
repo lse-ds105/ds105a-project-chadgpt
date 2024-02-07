@@ -184,7 +184,7 @@ We also calculated the average nutritional data (calories, carbohydates, fat, sa
 - On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that they are unhealthy.  
   
 For all our fellow LSE students out there, when you move into your new accommodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!  
-<iframe src="ingredient_frequency.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888"></iframe>   
+<iframe src="ingredient_frequency.html" style="width: 350px; height: 100%; border:none;"></iframe>   
 
 ### 📖Overall Conclusion
 We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post.
