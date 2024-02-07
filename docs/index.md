@@ -145,10 +145,7 @@ We obtained the top 10 most common cuisines featured on Reddit and for the remai
     - Mexican and Indian cuisines rarely use eggs in their recipes 
     - Chinese cuisine rarely contain butter in their recipes  
 
-- We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart.
-- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). Indian, Japanese and Thai food also fare pretty well, with most indicators lying below the threshold. For the more health conscious students at LSE, Chinese cuisine may be the way to go!
-- On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that they are unhealthy.
-
+We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart.
 
 <html lang="en">
 <head>
@@ -183,13 +180,11 @@ We obtained the top 10 most common cuisines featured on Reddit and for the remai
 </body>  
 </html>
 
-- Notably, Italian cuisine has the most calories, while Greek cuisine has the lowest calories. For the gymbros at LSE, they can consider cooking more XX cuisine for its high protein content and building muscle.   
-blah blah blah  
-
-blah blah blah  
-
-- insert top 10 ingredient list  
-    - For all our fellow LSE students out there, when you move into your new accommodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!  
+- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). Indian, Japanese and Thai food also fare pretty well, with most indicators lying below the threshold. For the more health conscious students at LSE, Chinese cuisine may be the way to go!
+- On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that they are unhealthy.  
+  
+For all our fellow LSE students out there, when you move into your new accommodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!  
+<iframe src="ingredient_frequency.html" style="width: 100%; height: 250px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888"></iframe>   
 
 ### 📖Overall Conclusion
 We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post.
