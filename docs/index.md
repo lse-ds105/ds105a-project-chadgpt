@@ -215,13 +215,13 @@ We observe that our initial hypothesis regarding the correlation between the hea
 ### 🔥🔥🔥🔥Contributions
 
 -   Zicheng Liu (zcliu35)
-    -   Hard carried
+    - Radar chart, scraping reddit data
 -   Yuyao Bai (yuyaobai)
-    -   Hard carried
+    -   Cosine similarity test, interactive plots, scraping BBC data
 -   Clarence Quek (kurarensu77)
-    -   got carried
+    -   scraped OP's comment and did plots, website
 -   Yi Song (songgyi)
-    -   got carried.....
+    -   Langid to remove non-English posts, website
 
 ### 🔎References
 - [BBC Good Food Guide to Healthy Eating](https://www.bbcgoodfood.com/howto/guide/good-food-guide-healthy-eating)
