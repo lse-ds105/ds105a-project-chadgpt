@@ -185,7 +185,9 @@ For all our fellow LSE students out there, when you move into your new accommoda
 <iframe src="ingredient_frequency.html" style="width: 200px; height: 350px; border:none;"></iframe>   
 
 ### 📖Overall Conclusion
-We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post.
+We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post. Nevertheless, in our culinary exploration, we still managed to make a number of interesting findings which we did not expect. 
+
+We recognize that our project is not without its built-in challenges. For example, while we've linked recipes from r/recipes and BBC Good Food using their titles as a basis for comparison, there's a chance that recipes bearing the same name may actually vary significantly in preparation and cooking technique. Such discrepancies could result in different end products, which our approach based solely on titles might not capture. We're aware that fully accounting for these nuances is quite a formidable task at present, yet we're confident in the robustness of our current analysis. Maybe, with further refinement of our skills and methods, we'll one day be able to address these complexities head-on.
 
 ### 📖Challenges
 
