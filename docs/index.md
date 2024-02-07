@@ -138,7 +138,8 @@ However, there are some interesting outliers.
 
 ### Part 2B 📊 Analysis of extracted cuisine and ingredients
 - We found the top 10 most common cuisines featured across Reddit and BBC Good Food. Interestingly, ...
-- We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart. (explain some cool findings)
+- We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart.
+- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). For the more health conscious students at LSE, Chinese cuisine may be the way to go!
 
 
 <html lang="en">
