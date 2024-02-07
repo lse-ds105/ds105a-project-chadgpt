@@ -9,9 +9,9 @@
 
 ## 🍗 Spicing Up Data: An Analytical Feast on r/recipe
 
-As a student facing the challenges of independent living at LSE, have you experimented with any recipes shared on r/recipe? Better yet, have you actively added your own culinary creations to this subreddit? If you're navigating through the multitude of recipes available and seeking your ultimate go-to meal for tight budgets and busy schedules, look no further!
+As a student facing the challenges of independent living at LSE, have you experimented with any recipes shared on r/recipes? Better yet, have you actively added your own culinary creations to this subreddit? If you're navigating through the multitude of recipes available and seeking your ultimate go-to meal for tight budgets and busy schedules, look no further!
 
-Having experienced the struggles firsthand, we're here to guide you in making informed decisions. Discover the most highly praised recipes on r/recipe and identify the ones with optimal nutritional value to create the ultimate go-to meals for your student journey. Whether you've been through it or are currently navigating it, we're here to assist you in choosing recipes that not only meet your taste preferences but also provide the essential nutrients needed for the best struggle meals ever!
+Having experienced the struggles firsthand, we're here to guide you in making informed decisions. Discover the most highly praised recipes on r/recipes and identify the ones with optimal nutritional value to create the ultimate go-to meals for your student journey. Whether you've been through it or are currently navigating it, we're here to assist you in choosing recipes that not only meet your taste preferences but also provide the essential nutrients needed for the best struggle meals ever!
 
 ### Our Data Source
 
@@ -20,7 +20,7 @@ Having experienced the struggles firsthand, we're here to guide you in making in
 
 ### Motivation
 
-Our project's origin story began on a Thursday night as the four of us gathered to brainstorm ideas before our DS105A class. Hungry and in need of a break, we ventured to a nearby chicken shop known for its delectable spicy sauce. Curious about its secret ingredients, we turned to Reddit for answers. To our delight, we stumbled upon a well-organized subreddit dedicated to culinary exploration. Inspired by our discovery, we decided to explore our findings on r/recipes and share with our fellow coursemates.
+Our project's origin story began on a Thursday night as the four of us gathered to brainstorm ideas before our DS105A class. Hungry and in need of a break, we ventured to a nearby fried chicken shop known for its delectable spicy sauce. Curious about its secret ingredients, we turned to Reddit for answers. To our delight, we stumbled upon a well-organized subreddit dedicated to culinary exploration. Inspired by our discovery, we decided to explore our findings on r/recipes and share with our fellow coursemates.
 
 ## 📋PROJECT Roadmap
 
@@ -34,7 +34,7 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 
 ### 📖Part 1 (Initial Scraping and Cleaning)
 
--   We started off with r/recipe, where we used the Reddit API to get the data that we want (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
+-   We started off with r/recipes, where we used the Reddit API to get the data that we want (title of post, date and time created, number of upvotes, upvote ratio, number of comments, url)
 -   Example of raw data frame obtained from reddit:
     -   <iframe src="posts.html" style="width: 100%; height: 400px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 2px 2px 5px #888;">
 
@@ -43,7 +43,7 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
         Full data frame shape: 2065 x 113
 
     -   We received around **2065** recipes from the Reddit API, containing basic details like links, upvote ratios, post flairs, and upvote counts. The dataframe is raw and needs cleaning, with redundant columns to be removed
--   Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to testing our hypothesis.
+-   Prior to data cleaning, we accessed the original poster's comment, a crucial step as it contains the OP's recipe and ingredients list for us to test our hypothesis.
 -   Observation: We selected this subreddit under the assumption that its posts maintain a well-structured format regulated by moderators. However, some posts required data cleaning due to improper formatting or deletion.\
     Data Cleaning Steps:
     -   1️⃣ Filtering out posts with **non-English titles** was achieved through a custom function called "Chadtools", leveraging the Langid package.
@@ -115,7 +115,8 @@ The above plot shows that there is no clear relationship between the popularity 
 
 We also made another interesting observation that many posts have exactly the same upvote ratio (down to 10 decimal places). The upvote ratio was also always close to a whole number (e.g. 0.9501963125). This could be due to normalisation or rounding errors on Reddit.
   
-Follow the link on each point (using **cmd+click/ ctrl+click**) to find the recipe that is both well-received and meets your nutritional goals!   
+Follow the link on each point (using **cmd+click/ ctrl+click**) to find a recipe that is both well-received and meets your nutritional goals!   
+  
 
 <iframe src="upvote_ratio_vs_bbcgf_rating" style="width:100%; height:700px; border:none;">
 
@@ -143,7 +144,7 @@ We obtained the top 10 most common cuisines featured on Reddit and for the remai
     - Mexican and Indian cuisines rarely use eggs in their recipes 
     - Chinese cuisine rarely contain butter in their recipes  
 
-We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart.
+We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, so including all the nutrition data would complicate our radar chart.
 
 <html lang="en">
 <head>
@@ -178,8 +179,8 @@ We also calculated the average nutritional data (calories, carbohydates, fat, sa
 </body>  
 </html>
 
-- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). Indian, Japanese and Thai food also fare pretty well, with most indicators lying below the threshold. For the more health conscious students at LSE, Chinese cuisine may be the way to go!
-- On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that they are unhealthy.  
+- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). Indian, Japanese and Thai cuisines also fare pretty well, with most indicators lying below the threshold. For the more health conscious students at LSE, Chinese cuisine may be the way to go!
+- On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that these cuisines are more unhealthy.  
   
 For all our fellow LSE students out there, when you move into your new accommodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!  
 <iframe src="ingredient_frequency.html" style="width: 200px; height: 350px; border:none;"></iframe>   
@@ -187,7 +188,7 @@ For all our fellow LSE students out there, when you move into your new accommoda
 ### 📖Overall Conclusion
 We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post. Nevertheless, in our culinary exploration, we still managed to make a number of interesting findings as documented above which we did not expect. 
 
-We recognize that our project and approach is not without its limitations. For example, while we have linked recipes from r/recipes and BBC Good Food using their titles as a basis for comparison, there is a chance that recipes bearing the same name may actually vary significantly in preparation and cooking technique. Such discrepancies could result in end products with different nutritional values, which our approach based solely on titles might not capture. We are aware that fully accounting for these nuances is quite a formidable task at present, yet we're confident in the robustness of our current analysis. Perhaps with further refinement of our skills and methods, we will one day be able to address these challenges head-on.
+We recognize that our project and approach is not without its limitations. For example, while we have linked recipes from r/recipes and BBC Good Food using their titles as a basis for comparison, there is a chance that recipes bearing the same name may actually vary significantly in preparation and cooking technique. Such discrepancies could result in end products with different nutritional values, which our approach based solely on titles might not capture. We are aware that fully accounting for these nuances is quite a formidable task at present, yet we're confident in the robustness of our current analysis.  
 
 ### 📖Challenges
 
@@ -199,7 +200,7 @@ We recognize that our project and approach is not without its limitations. For e
 #### ❎ 2:Extracting Reddit recipes and ingredients
 
 -   Extracting the OP's comment containing the actual recipe posed a challenge. While we could use one of the Reddit API Keys to target all OP's comments, we faced difficulties isolating the specific comment with the desired recipe.
-    -   To overcome this challenge, we made an assumption: The OP's comment we want will be LONGER all other comments by the OP. Through this, we are able to target the OP's original comment with ingredients and instructions.
+    -   To overcome this challenge, we made an assumption: The OP's comment we want will be LONGER all other comments by the OP. This proved to be a very powerful assumption as through this, we are able to target the OP's original comment with ingredients and instructions for all the posts on r/recipes. 
 
 #### ❎ 3: Analysing Reddit recipes and ingredients
 
@@ -214,7 +215,7 @@ We recognize that our project and approach is not without its limitations. For e
 -   Yuyao Bai (yuyaobai)
     -   Cosine similarity test, interactive plots, scraping BBC data
 -   Clarence Quek (kurarensu77)
-    -   scraped OP's comment and did plots, website, cleaning data
+    -   Scraped OP's comment and did plots, website, cleaning data
 -   Yi Song (songgyi)
     -   Langid to remove non-English posts, website
 
