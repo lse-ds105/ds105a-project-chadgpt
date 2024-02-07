@@ -137,8 +137,15 @@ However, there are some interesting outliers.
 -   This exposes an imperfection in our approach-- ingredients and cooking procedure have a huge impact on how well a post is received, despite the Reddit and BBC Good Food recipe titles being highly similar.
 
 ### Part 2B 📊 Analysis of extracted cuisine and ingredients
-- We found the top 10 most common cuisines featured across Reddit and BBC Good Food. Interestingly, ...
-- We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart.
+We obtained the top 10 most common cuisines featured on Reddit and for the remaining cuisines, grouped them together as 'other'. We also collected the top 10 most common ingredients used and plotted these two variables as a stacked bar chart.  
+![Plot: linking most common ingredients and cuisines](top_10_ingredients_cuisine.jpg)  
+- A large proportion of the top 10 most common ingredients are seasonings and flavourings, which is to be expected as almost all recipes will require these. 
+- Some interesting findings:  
+    - Olive oil and white onions feature prominently in Italian cuisine 
+    - Mexican and Indian cuisines rarely use eggs in their recipes 
+    - Chinese cuisine rarely contain butter in their recipes  
+
+- We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart.
 - One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). For the more health conscious students at LSE, Chinese cuisine may be the way to go!
 
 
