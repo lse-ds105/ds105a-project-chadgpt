@@ -141,24 +141,24 @@ However, there are some interesting outliers.
 - We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart. (explain some cool findings)
 <table>
   <tr>
-    <td><img src="./plots/radar_plot_American.png" alt="American" style="max-width: 100px;"></td>
-    <td><img src="./plots/radar_plot_British.png" alt="British" style="max-width: 100px;"></td>
+    <td><img src="./plots/radar_plot_American.png" alt="American" style="max-width: 50px;"></td>
+    <td><img src="./plots/radar_plot_British.png" alt="British" style="max-width: 50px;"></td>
   </tr>
   <tr>
-    <td><img src="./plots/radar_plot_Chinese.png" alt="Chinese" style="max-width: 100px;"></td>
-    <td><img src="./plots/radar_plot_French.png" alt="French" style="max-width: 100px;"></td>
+    <td><img src="./plots/radar_plot_Chinese.png" alt="Chinese" style="max-width: 50px;"></td>
+    <td><img src="./plots/radar_plot_French.png" alt="French" style="max-width: 50px;"></td>
   </tr>
   <tr>
-    <td><img src="./plots/radar_plot_Greek.png" alt="Greek" style="max-width: 100px;"></td>
-    <td><img src="./plots/radar_plot_Indian.png" alt="Indian" style="max-width: 100px;"></td>
+    <td><img src="./plots/radar_plot_Greek.png" alt="Greek" style="max-width: 50px;"></td>
+    <td><img src="./plots/radar_plot_Indian.png" alt="Indian" style="max-width: 50px;"></td>
   </tr>
   <tr>
-    <td><img src="./plots/radar_plot_Italian.png" alt="Italian" style="max-width: 100px;"></td>
-    <td><img src="./plots/radar_plot_Japanese.png" alt="Japanese" style="max-width: 100px;"></td>
+    <td><img src="./plots/radar_plot_Italian.png" alt="Italian" style="max-width: 50px;"></td>
+    <td><img src="./plots/radar_plot_Japanese.png" alt="Japanese" style="max-width: 50px;"></td>
   </tr>
   <tr>
-    <td><img src="./plots/radar_plot_Mexican.png" alt="Mexican" style="max-width: 100px;"></td>
-    <td><img src="./plots/radar_plot_Thai.png" alt="Thai" style="max-width: 100px;"></td>
+    <td><img src="./plots/radar_plot_Mexican.png" alt="Mexican" style="max-width: 50px;"></td>
+    <td><img src="./plots/radar_plot_Thai.png" alt="Thai" style="max-width: 50px;"></td>
   </tr>
 </table>
 
