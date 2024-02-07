@@ -3,6 +3,7 @@ library(tidyverse)
 library(ggradar)
 
 df <- read_csv("../data/top10cuisines_nutrients_normalised.csv", trim_ws = FALSE)
+print(df$cuisine)
 
 for (i in df$cuisine) {
    selected_df <-
@@ -23,6 +24,6 @@ for (i in df$cuisine) {
            gridline.mid.linetype = 2,
            gridline.max.linetype = 1
        ) %>%
-       ggsave(filename = paste0("./plots/radar/radar_plot_", i, ".png"), width = 16, height = 9, units = "in", dpi = 600)
-    print(paste0("./plots/radar/radar_plot_", i, ".png"))
+       ggsave(filename = paste0("../docs/plots/radar_plot_", i, ".png"), width = 16, height = 9, units = "in", dpi = 600)
+    print(paste0("../docs/plots/radar/radar_plot_", i, ".png"))
 }
