@@ -1,6 +1,5 @@
 import json
 import requests as r
-import spacy
 import langid
 from openai import OpenAI
 import re
