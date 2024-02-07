@@ -67,7 +67,7 @@ We analysed data from reddit and observed some trends on posts with different fl
 - Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil more dietary requirements and thus appeal to a larger audience base.   
 
 ![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)   
-- Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
+- Furthermore, an overarching observation across all posts reveals a **conspicuous left skew**(longer tail on the left) in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
 
 ### 📖Part 2 (Further Scraping and Cleaning)
 
@@ -136,8 +136,8 @@ However, there are some interesting outliers.
 
 ### Part 2B 📊 Analysis of extracted cuisine and ingredients
 - We found the top 10 most common cuisines featured across Reddit and BBC Good Food. Interestingly, ...
-- We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as greater protein and fibre is generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart. (explain some cool findings)
-Notably, Italian cuisine has the most calories, while Greek cuisine has the lowest calories. For the gymbros at LSE, they can consider cooking more XX cuisine for its high protein content and building muscle. 
+- We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart. (explain some cool findings)
+- Notably, Italian cuisine has the most calories, while Greek cuisine has the lowest calories. For the gymbros at LSE, they can consider cooking more XX cuisine for its high protein content and building muscle. 
 blah blah blah
 
 blah blah blah
@@ -176,3 +176,7 @@ We observe that our initial hypothesis regarding the correlation between the hea
     -   got carried
 -   Yi Song (songgyi)
     -   got carried.....
+
+### 🔎References
+- [BBC Good Food Guide to Healthy Eating](https://www.bbcgoodfood.com/howto/guide/good-food-guide-healthy-eating)
+- [NHS Eatwell Guide](https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/)
