@@ -62,7 +62,7 @@ We suggest a hypothesis that implies **popular food**, as evidenced by a **high 
 
 We analysed data from Reddit and observed some trends on posts with different flairs!  
 ![Plot: Dessert Flair is the most popular!](plot_top_10_percent_upvote_ratio.jpg)   
-- Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufil a wider range of dietary restrictions and thus appeal to a larger audience base.   
+- Remarkably, within the **top 10%** of posts ranked by **upvote ratio**, those labeled with the **"dessert"**🍦 flair exhibit the highest frequency. Notably, this occurrence surpasses the **second-highest**, **"poultry"**🍗 by more than half. It suggests a **strong inclination among Reddit users towards favoring dessert-related posts.** Our theory is that dessert posts fufill a wider range of dietary restrictions and thus appeal to a larger audience base.   
 
 ![Plot: All flairs are skewed to the left!](plot_all_upvote_ratio.jpg)   
 - Furthermore, an overarching observation across all posts reveals a **conspicuous left skew** (longer left-tail) in the distribution of upvote ratios. This skew suggests that a significant majority of posts tend to **approach a ratio of 1**. Such a pattern implies the existence of a community within this subreddit that is supportive and benevolent. Notably, this trend persists across individual flair categories in Reddit posts.
