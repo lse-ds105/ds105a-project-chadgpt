@@ -114,6 +114,8 @@ Approach:
 </iframe>
 
 The above plot shows that there is no clear relationship between the popularity of a recipe (using Reddit upvote ratio as a proxy) and the healthiness of a recipe (using calorie count as a proxy)-- this means that our initial hypothesis is incorrect! By choosing select flairs on the legend, we see that this lack of correlation holds regardless of the category of food that the recipe falls under. One possible reason for this lack of correlation is that the motivation behind upvoting may extend beyond the perceived healthiness of a recipe. Visual appeal, creativity, the story behind the recipe, or a desire to support the OP (Original Poster) can all influence upvotes more than nutritional content.  
+
+We also made another interesting observation that many posts have exactly the same upvote ratio (down to 10 decimal places). The upvote ratio was also always close to a whole number (e.g. 0.9501963125). This could be due to normalisation or rounding errors on Reddit.
   
 Follow the link on each point (using **cmd+click/ ctrl+click**) to find the recipe that is both well-received and meets your nutritional goals!   
 
