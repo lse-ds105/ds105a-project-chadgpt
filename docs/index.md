@@ -140,6 +140,7 @@ However, there are some interesting outliers.
 - We found the top 10 most common cuisines featured across Reddit and BBC Good Food. Interestingly, ...
 - We also obtained the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each cuisine. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, complicating our radar chart. (explain some cool findings)
 
+```html
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -171,6 +172,7 @@ However, there are some interesting outliers.
   <div class="grid-item"><img src="./plots/radar_plot_Thai.png" alt="Thai"></div>
 </div>
 </body>
+
 
 
 
