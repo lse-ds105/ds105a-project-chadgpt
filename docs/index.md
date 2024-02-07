@@ -215,11 +215,11 @@ We observe that our initial hypothesis regarding the correlation between the hea
 ### 🔥🔥🔥🔥Contributions
 
 -   Zicheng Liu (zcliu35)
-    - Radar chart, scraping reddit data
+    - Radar chart, scraping reddit data, cleaning data
 -   Yuyao Bai (yuyaobai)
     -   Cosine similarity test, interactive plots, scraping BBC data
 -   Clarence Quek (kurarensu77)
-    -   scraped OP's comment and did plots, website
+    -   scraped OP's comment and did plots, website, cleaning data
 -   Yi Song (songgyi)
     -   Langid to remove non-English posts, website
 
