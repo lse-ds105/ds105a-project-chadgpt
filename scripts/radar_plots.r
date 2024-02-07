@@ -2,13 +2,13 @@ library(ggplot2)
 library(tidyverse)
 library(ggradar)
 
-df <- read_csv("./data/top10cuisines_nutrients_normalised.csv")
+df <- read_csv("../data/top10cuisines_nutrients_normalised.csv")
 print(df)
 
 for (i in df$cuisine) {
     selected_df <- 
         df %>%
-        filter(cuisine == i)
+        filter(cuisine == i | cuisine == "Healthy threshold") 
     plot <- selected_df %>%
         ggradar(
             plot.title = paste0("Nutrient Profile of ", i, " Cuisine"),
@@ -22,5 +22,5 @@ for (i in df$cuisine) {
             gridline.mid.linetype = 2,
             gridline.max.linetype = 1
         ) %>%
-        ggsave(filename = paste0("./plots/radar/radar_plot_", i, ".png"), width = 8, height = 8, units = "in", dpi = 600)
+        ggsave(filename = paste0("./plots/radar/radar_plot_", i, ".png"), width = 16, height = 9, units = "in", dpi = 600)
 }

@@ -26,3 +26,12 @@ https://www.bbcgoodfood.com/howto/guide/good-food-guide-healthy-eating
 - Low fat: 12g or less per serving
 - Low sugar: 15g or less per serving
 - Low salt: 1.5g or less per serving
+
+NHS EatWell guide (assume 3 meals a day):
+- Carbs: 40g per meal (120g per day)
+- Fat: 20g per meal (70g per day) 
+- Protein: 19g per meal (55g per day)
+- Saturates: 10g per meal (30g per day)
+- Sugar: 10g per meal (30g per day)
+- Fibre: 10g per meal (30g per day)
+- Salt: 2g per serving (6g per day)
