@@ -22,8 +22,9 @@ for (i in df$cuisine) {
            group.point.size = 2,   # size of the the points
            gridline.min.linetype = 1,
            gridline.mid.linetype = 2,
-           gridline.max.linetype = 1
+           gridline.max.linetype = 1,
+           legend.position = "top"
        ) %>%
-       ggsave(filename = paste0("../docs/plots/radar_plot_", i, ".png"), width = 16, height = 9, units = "in", dpi = 600)
+       ggsave(filename = paste0("../docs/plots/radar_plot_", i, ".png"), width = 10, height = 10, units = "in", dpi = 600)
     print(paste0("../docs/plots/radar/radar_plot_", i, ".png"))
 }
