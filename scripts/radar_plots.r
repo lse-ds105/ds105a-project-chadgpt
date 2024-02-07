@@ -11,6 +11,7 @@ for (i in df$cuisine) {
         filter(cuisine == i | cuisine == "Healthy threshold") 
     plot <- selected_df %>%
         ggradar(
+            group.colours = c("#BFBFBF", "#5C3DA4"),
             plot.title = paste0("Nutrient Profile of ", i, " Cuisine"),
             font.radar = 'roboto',
             values.radar = c(0, 5, 10),
