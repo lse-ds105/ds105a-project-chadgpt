@@ -173,6 +173,7 @@ However, there are some interesting outliers.
   <div class="grid-item"><img src="./plots/radar_plot_Thai.png" alt="Thai"></div>
 </div>
 </body>  
+</html>
 
 - Notably, Italian cuisine has the most calories, while Greek cuisine has the lowest calories. For the gymbros at LSE, they can consider cooking more XX cuisine for its high protein content and building muscle.   
 blah blah blah  
