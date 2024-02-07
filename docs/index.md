@@ -144,7 +144,9 @@ We obtained the top 10 most common cuisines featured on Reddit and for the remai
     - Mexican and Indian cuisines rarely use eggs in their recipes 
     - Chinese cuisine rarely contain butter in their recipes  
 
-We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally viewed as healthy unlike the other nutritional indicators, so including all the nutrition data would complicate our radar chart.
+We also calculated the average nutritional data (calories, carbohydates, fat, salt, sugar, saturates) for each of the top 10 cuisines. After obtaining benchmark values for these data from BBC Good Food and NHS, we visualise this information in radar charts for easy comparison. We have excluded the protein and fibre values from the radar charts, as more protein and fibre are generally considered healthier unlike the other nutritional indicators, so including all the nutrition data would complicate our radar chart.
+
+- In the charts below, the values for each nutrient have been normalised using min-max normalisation, so that the values lie between 0 and 10. 0 indicates the lowest of all the cuisines, and 10 indicates the highest.
 
 <html lang="en">
 <head>
@@ -179,9 +181,9 @@ We also calculated the average nutritional data (calories, carbohydates, fat, sa
 </body>  
 </html>
 
-- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). Indian, Japanese and Thai cuisines also fare pretty well, with most indicators lying below the threshold. For the more health conscious students at LSE, Chinese cuisine may be the way to go!
-- On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that these cuisines are more unhealthy.  
-  
+- One very intriguing finding is that Chinese cuisine is on average the healthiest cuisine out of the top 10 most popular ones. For all 6 indicators, values lie below the threshold significantly (except salt). Indian, Japanese and Thai cuisines also fare pretty well, with most indicators lying below the threshold. For the more health-conscious students at LSE, Chinese cuisine may be the way to go!
+- On the other hand, American, British and French cuisine stand out with higher sugar profiles, which might reflect the prevalence of sweetened foods and beverages in these diets, suggesting that these cuisines are more unhealthy.
+
 For all our fellow LSE students out there, when you move into your new accommodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!  
 <iframe src="ingredient_frequency.html" style="width: 200px; height: 350px; border:none;"></iframe>   
 
@@ -204,16 +206,16 @@ We recognize that our project and approach is not without its limitations. For e
 
 #### ❎ 3: Analysing Reddit recipes and ingredients
 
--   Analysing the ingredient lists provided by the OP on Reddit was difficult, as there was a lot of variance and the formatting of ingredient lists still differed despite the implementation of stricter regulations on the format of posts in the subreddit. The ingredients were often not well-formatted, making it difficult identify the exact ingredient using NLP. For instance, it was challenging to get Spacy or Regex to identify that the main ingredient in the line "1 clove of garlic, minced" was "garlic". To overcome this challenge, we decided to use ChatGPT 3.5, as it is a very well-trained model that proved to be much better at identifying the primary ingredients when a high variation in the formatting is present.
+-   Analysing the ingredient lists provided by the OP on Reddit was difficult, as there was a lot of variance and the formatting of ingredient lists still differed despite the implementation of stricter regulations on the format of posts in the subreddit. The ingredients were often not well-formatted, making it difficult identify the exact ingredient using NLP. For instance, it was challenging to get Spacy or Regex to identify that the main ingredient in the line "1 clove of garlic, minced" was "garlic". To overcome this challenge, we decided to use GPT 3.5, as it is a very well-trained model that proved to be much better at identifying the primary ingredients when a high variation in formatting is present.
 
 ## 📋Appendix
 
 ### 🔥🔥🔥🔥Contributions
 
 -   Zicheng Liu (zcliu35)
-    - Radar chart, scraping reddit data, cleaning data
+    - Radar charts, scraping reddit data, cleaning data
 -   Yuyao Bai (yuyaobai)
-    -   Cosine similarity test, interactive plots, scraping BBC data
+    -   Cosine similarity test to link reddit and BBC GoodFood, interactive plots, scraping BBC data
 -   Clarence Quek (kurarensu77)
     -   Scraped OP's comment and did plots, website, cleaning data
 -   Yi Song (songgyi)
