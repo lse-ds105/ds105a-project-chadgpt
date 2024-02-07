@@ -33,9 +33,9 @@ If you want to replicate the analysis in this notebook, you will need to:
 - We used ChatGPT by giving specific prompts to help us generate ideas on how to proceed. We also used it to help with finding errors in our code.
     - ChatGPT played a significant role in familiarizing us with the appropriate functions, in addition to consulting official documentation extensively. It was utilized both for debugging purposes and to inspire new ideas.
     - Example of use of ChatGPT 
-        - Learn interactive plotting using Altair. An example plot could be: "Can you provide a brief overview of how to create interactive plots using Altair in Python?" ChatGPT will then generate a response that outlines the steps involved in creating interactive plots with Altair, explaining concepts such as encoding data, specifying chart types, and adding interactivity features like tooltips and selection.
-
+        - Learn interactive plotting using Altair. An example plot could be: "Can you provide a brief overview of how to create interactive plots using Altair in Python?" ChatGPT will then generate a response that outlines the steps involved in creating interactive plots with Altair, explaining concepts such as encoding data, specifying chart types, and adding interactivity features like tooltips and selection. It was incredibly helpful in giving us ideas for our visualisations, such as using radar charts, frequency tables, histograms and more for our plots.
         - Brainstorming comparisons we can do using nutritional values and ingredients. Prompt: "What are some potential comparisons we can make using nutritional values and ingredients data?" ChatGPT could then generate ideas such as comparing the nutritional profiles of different cuisines, analyzing the most common ingredients used."
+        - Additionally, we asked ChatGPT for specific methods we can use to filter out non-English posts. It provided us with various options such as regex, langid, and spacy, along with their respective pros and cons. This allowed us to gain a broad overview of our project, guiding our next steps. We then supplemented this knowledge by learning from the official documentation.
 
 
 
