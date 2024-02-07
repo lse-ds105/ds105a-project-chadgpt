@@ -135,13 +135,14 @@ However, there are some interesting outliers.
 -   This exposes an imperfection in our approach-- ingredients and cooking procedure have a huge impact on how well a post is received, despite the Reddit and BBC Good Food recipe titles being highly similar.
 
 ### Part 2B 📊 Analysis of extracted cuisine and ingredients
-
+- We found the top 10 most common cuisines featured across Reddit and BBC Good Food. Interestingly, ...
+- Notably, Italian cuisine has the most calories, while Greek cuisine has the lowest calories. For the gymbros at LSE, they can consider cooking more XX cuisine for its high protein content and building muscle. 
 blah blah blah
 
 blah blah blah
 
 - insert top 10 ingredient list
-    - For all our fellow LSE students out there, when you move into your new accomodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!
+    - For all our fellow LSE students out there, when you move into your new accommodation next year, these 10 most-used ingredients are your move-in kitchen staples for you to become a meal prep monster!
 
 ### 📖Overall Conclusion
 We observe that our initial hypothesis regarding the correlation between the healthiness of a recipe and its popularity was incorrect. On hindsight, our hypothesis was perhaps restricted in its perspective, as there are after all many other variables that affect the popularity of a post, such as the aesthetics or story behind the post, or even the algorithm behind the post.
